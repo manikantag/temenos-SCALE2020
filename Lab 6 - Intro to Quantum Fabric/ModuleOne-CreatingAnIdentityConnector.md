@@ -1,5 +1,5 @@
 # Connecting a Quantum App to an Identity Service Lab Guide
-**Duration**: 10 mins
+**Duration**: 30 mins
 
 **Prerequisite Software and Tools**
 
