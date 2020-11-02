@@ -1,4 +1,4 @@
-# Connecting a Quantum App to an Identity Service Lab Guide
+# Creating an Identity Connector
 **Duration**: 30 mins
 
 **Prerequisite Software and Tools**
