@@ -41,3 +41,7 @@ At the end of this lab you should be able to:
 - Integrate a previously configured email service to a workflow.
 - Test a published workflow.
 [View Module Three README.md]()
+
+**Rate Temenos SCALE**
+
+Let us know how we did via our [Feedback Survey]()
