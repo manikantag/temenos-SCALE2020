@@ -25,7 +25,7 @@ Tasks you will complete in this lab exercise include:
 - Test the client
 
 ## Module 1: Lab Instructions
-++Import Your Visualizer Application++
+**Import Your Visualizer Application**
 
 **NOTE** -If you did not attend the previous sessions on building Visualizer client apps, you need to follow the starting steps outlined here.
 
@@ -35,7 +35,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/1.ImportYourVisualizerApplication.png)
 
-++Create a New Fabric App++
+**Create a New Fabric App**
 
 3. Click the Fabric icon in the left hand navigation.
 
@@ -45,7 +45,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/3.BankingDemoApp.png)
 
-++Create New Identity Service++
+**Create New Identity Service**
 
 5. Select the Identity tab.
 
@@ -57,7 +57,7 @@ Tasks you will complete in this lab exercise include:
 
 8. Name your identity service BankingIdentity. Click the Save button
 
-++Add a Repository User++
+**Add a Repository User**
 
 9. We need to add a user to our repository since our repository is empty. From the configuration screen, click the ADD USER button.
 
@@ -81,7 +81,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/9.FabricBackend.png)
 
-++Connect the Client Application to the Identity Service.++
+**Connect the Client Application to the Identity Service.**
 
 15. From the top navigation, click the design tab next to the storyboard.
 
@@ -137,7 +137,7 @@ Tasks you will complete in this lab exercise include:
 
 31. Click save. Your app is now mapped to the Identity service. Let’s get ready to test our app by deploying the Fabric app to a Fabric runtime. 
 
-++Deploy Fabric App++
+**Deploy Fabric App**
 
 32. Before you can run the client application, you need to deploy the Fabric application that exposes the services on Quantum Fabric. When we were in the Fabric console, we were configuring the identity provider, but we can’t use the configuration until it is deployed to a Fabric runtime.  From a web browser, connect to the following url: http://manage.kony.com. 
 
@@ -163,7 +163,7 @@ Tasks you will complete in this lab exercise include:
 
 39. Close your browser.
 
-++Run the App in Live Preview++
+**Run the App in Live Preview**
 
 40. Return to Visualizer. Let’s run our client app locally using Visualizer’s preview mode. 
 
