@@ -31,7 +31,7 @@ Tasks you will complete in this lab exercise include:
 
 1. Open Visualizer
 
-2. Import the ScaleApp.zip by selecting, Import->Local Project-> Open as New Project.
+2. Import the ScaleApp.zip by selecting, Import > Local Project > Open as New Project.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/1.ImportYourVisualizerApplication.png)
 
@@ -41,7 +41,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/2.FabricIcon.png)
 
-4. Rename the app BankingDemoApp by clicking on the pencil icon to edit the app name.
+4. Rename the app "BankingDemoApp" by clicking on the pencil icon to edit the app name.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/3.BankingDemoApp.png)
 
@@ -55,7 +55,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/4.IdentityProviders.png)
 
-8. Name your identity service BankingIdentity. Click the Save button
+8. Name your identity service "BankingIdentity". Click the Save button
 
 **Add a Repository User**
 
