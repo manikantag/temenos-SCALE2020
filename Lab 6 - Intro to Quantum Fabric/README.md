@@ -15,6 +15,7 @@ This lab introduces the subject of connecting a Quantum App to an Identity Servi
 - Connect your Quantum app to an identity provider
 - Deploy a fabric app
 - Test the client.
+
 [View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/ModuleOne-CreatingAnIdentityConnector.md)
 
 ## Module Two: Connecting an Object Service
@@ -28,7 +29,8 @@ This lab introduces object services. After completing the lab, you should be abl
 - Connect the client to the object service
 - Deploy a fabric app
 - Test the client.
-[View Module Two README.md]()
+
+[View Module Two README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/ModuleTwo-ConnectingAnObjectService.md)
 
 ## Module Three: Creating a Quantum Fabric Workflow
 
@@ -40,6 +42,7 @@ At the end of this lab you should be able to:
 - Add pre-existing business rules to a workflow.
 - Integrate a previously configured email service to a workflow.
 - Test a published workflow.
+
 [View Module Three README.md]()
 
 **Rate Temenos SCALE**

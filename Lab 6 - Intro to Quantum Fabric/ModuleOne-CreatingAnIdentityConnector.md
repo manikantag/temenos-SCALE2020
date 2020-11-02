@@ -151,7 +151,7 @@ Tasks you will complete in this lab exercise include:
 
 7. When the application is published, the publication window will show a green checkmark. 
  
- ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/23.PublishedAppDetails.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/23.PublishedAppDetails.png)
 
 8. Close your browser.
 
