@@ -1,4 +1,4 @@
-## Welcome to the home of the Temenos SCALE Hands-on Lab online. 
+# Welcome to the home of the Temenos SCALE Hands-on Lab online. 
 
 This is the place to hone your skills and develop the hands-on expertise you need to be even more successful.
 
@@ -13,6 +13,6 @@ Please select the Lab you would like to visit, from the following:
 
 For more hands-on learning, to ask a question to our experts or to experience our APIs, head over to [https://basecamp.temenos.com/s/](https://basecamp.temenos.com/s/) and join the Developer Community. 
 
-##Rate Temenos SCALE
+**Rate Temenos SCALE**
 
 Let us know how we did via our [Feedback Survey]()
