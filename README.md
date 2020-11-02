@@ -11,7 +11,7 @@ Please select the Lab you would like to visit, from the following:
 - [lab 6 - Intro to Quantum Fabric]()
 - [lab 7 - Next Gen UX with Quantum Visualizer]()
 
-For more hands-on labs or to experience our APIs, head over to [https://basecamp.temenos.com/s/](https://basecamp.temenos.com/s/) and join the Developer Community. 
+For more hands-on learning, to ask a question to our experts or to experience our APIs, head over to [https://basecamp.temenos.com/s/](https://basecamp.temenos.com/s/) and join the Developer Community. 
 
 ##Rate Temenos SCALE
 
