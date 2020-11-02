@@ -15,7 +15,7 @@ This lab introduces the subject of connecting a Quantum App to an Identity Servi
 - Connect your Quantum app to an identity provider
 - Deploy a fabric app
 - Test the client.
-[View Module One README.md]()
+[View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/ModuleOne-CreatingAnIdentityConnector.md)
 
 ## Module Two: Connecting an Object Service
 
