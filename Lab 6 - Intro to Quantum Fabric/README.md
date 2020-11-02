@@ -36,6 +36,7 @@ Tasks you will complete in this lab exercise include:
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/1.ImportYourVisualizerApplication.png)
 
 ++Create a New Fabric App++
+
 3. Click the Fabric icon in the left hand navigation.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/2.FabricIcon.png)
@@ -45,6 +46,7 @@ Tasks you will complete in this lab exercise include:
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/3.BankingDemoApp.png)
 
 ++Create New Identity Service++
+
 5. Select the Identity tab.
 
 6. Click Configure New.
@@ -56,6 +58,7 @@ Tasks you will complete in this lab exercise include:
 8. Name your identity service BankingIdentity. Click the Save button
 
 ++Add a Repository User++
+
 9. We need to add a user to our repository since our repository is empty. From the configuration screen, click the ADD USER button.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/5.AddBankingIdentityUser.png)
@@ -65,6 +68,7 @@ Tasks you will complete in this lab exercise include:
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/6.AddBankingIdentityUserDetail.png)
 
 11. Click ADD USER
+
 12. You will see that the user was added to your user repository. Make sure to write down the user name and password for the user you created. When we attach our client app to the identity provider, we will use this user to login to our client app.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/7.BankingIdentityUserAdded.png)
@@ -78,6 +82,7 @@ Tasks you will complete in this lab exercise include:
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/9.FabricBackend.png)
 
 ++Connect the Client Application to the Identity Service.++
+
 15. From the top navigation, click the design tab next to the storyboard.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/10.DesignTab.png)
@@ -161,6 +166,7 @@ Tasks you will complete in this lab exercise include:
 ++Run the App in Live Preview++
 
 40. Return to Visualizer. Let’s run our client app locally using Visualizer’s preview mode. 
+
 41. From the top menu, select Build > Live Preview Settings
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/24.RunInLivePreview.png)
@@ -170,6 +176,7 @@ Tasks you will complete in this lab exercise include:
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/25.ResponsiveWebCheck.png)
  
 43. Click Save and Run.
+
 44. This will locally compile your app as a responsive web app and start the preview browser.
 
 ADD PICTURE
@@ -178,16 +185,4 @@ ADD PICTURE
 47. If you are successful, you will successfully navigate to the dashboard form.
 
 **Module 1: Lab Summary**
-In the first module we imported a Visualizer app into our workspace. Then we learned how to create a Fabric app and Identity service using the user repository that comes with Quantim Fabric. Next we connected the client responsive web application to the identity service we created in Fabric. Once completed, we deployed the Fabric app and ran the client app from Visualizer. At this point we will move on to Part 2 and connecting your application to a Temenos Microservice
-
-
-
-
-
-
-
-
-
-
-
-
+In the first module we imported a Visualizer app into our workspace. Then we learned how to create a Fabric app and Identity service using the user repository that comes with Quantim Fabric. Next we connected the client responsive web application to the identity service we created in Fabric. Once completed, we deployed the Fabric app and ran the client app from Visualizer. At this point we will move on to Part 2 and connecting your application to a Temenos Microservice. 
