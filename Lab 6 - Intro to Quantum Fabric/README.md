@@ -179,7 +179,7 @@ Tasks you will complete in this lab exercise include:
 
 44. This will locally compile your app as a responsive web app and start the preview browser.
 
-ADD PICTURE
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/26.PublishedWebApp.png)
 
 46. Login to the application suing the credentials you created in the first part of this lab u=in the user repository.
 47. If you are successful, you will successfully navigate to the dashboard form.
