@@ -14,13 +14,13 @@ Tasks:	In this module you will learn how to harness XAI models and their explain
 
 In this example I will focus on an instance which is a borderline decision, it is, classified as “Uncreditworthy” but with a borderline score. As my model and yours will be different, you can’t see the same instance as I do, but just look for any example which has an “Uncreditworthy” score just above 50%.
 
-image064
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image064.png)
 
 2.	**Negative feature contribution – FICO Credit Score**
 
 Having a look at the rules and drivers view, I noticed that “FICO Credit Score is medium” is contributing negatively to a decision.  
 
-image066
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image066.png)
 
 3. **What if I changed the value?**
 Let’s assume the client aplying for the loan has some outstanding debt, lowering significantly his FICO Credit Score and, could the client pay such debt, the credit score value would go back to normal. 
@@ -31,11 +31,11 @@ As you will be exploring a different instance, the value you might need to chang
 
 (I) 
 
-image068
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image068.png)
 
 (II)
 
-image070
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image070.png)
  
 **Rate Temenos SCALE**
 
