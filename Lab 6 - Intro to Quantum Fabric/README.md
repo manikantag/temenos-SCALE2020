@@ -1,4 +1,4 @@
-# Introduction to Quantum Fabric
+# An Introduction to Quantum Fabric Capabilities and Microservice Integration
 
 **Prerequisite Software and Tools**
 
