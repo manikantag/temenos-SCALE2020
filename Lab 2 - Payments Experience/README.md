@@ -18,7 +18,7 @@ Tasks you will complete in this lab exercise include:
 
 - Retrieve details of all the payments executed 
 
-[View Module One README.md](xxx)
+[View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module1-GetAllPaymentDetails.md)
 
 ## Module Two: Get Payments based on Ordering Customer
 
@@ -33,7 +33,7 @@ Tasks you will complete in this lab exercise include:
 
 - Get list of all Payments by Customer Number
 
-[View Module Two README.md](xxx)
+[View Module Two README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module2-GetPaymentsBasedOnOrdering.md)
 
 ## Module Three: Initiate a SEPA payment
 
@@ -48,7 +48,7 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 - Initiate payment transactions
 
-[View Module Three README.md](xxx)
+[View Module Three README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module3-InitiateASepaPayment.md)
 
 ## Module Four: Initiate a SEPA Instant payment
 
@@ -64,18 +64,7 @@ Tasks: Tasks you will complete in this lab exercise include:
 - Initiate SEPA instant payment transactions
 - Check transparency details
 
-[View Module Four README.md](xxx)
-
-## Module Five:
-
-**Duration**: 20 mins
-
-Tasks: Tasks you will complete in this lab exercise include:
-
-- Initiate SEPA instant payment transactions
-- Check transparency details
-
-[View Module Five README.md](xxx)
+[View Module Four README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module4-InitiateASepaInstantPayment.md)
 
 **Rate Temenos SCALE**
 
