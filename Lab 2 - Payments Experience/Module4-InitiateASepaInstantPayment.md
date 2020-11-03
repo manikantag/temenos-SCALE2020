@@ -68,7 +68,8 @@ After completing the lab, you should be able to:
         "beneficiaryIBAN": "GB04BARC20474473160944",
         "paymentOrderProductId": "INSTPAY-OB"
     }
-   }```
+   }
+   ```
  
 9. Execute the API by clicking Send
  
