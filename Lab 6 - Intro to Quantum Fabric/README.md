@@ -47,4 +47,4 @@ At the end of this lab you should be able to:
 
 **Rate Temenos SCALE**
 
-Let us know how we did via our [Feedback Survey]()
+Let us know how we did via our [Feedback Survey](xx)
