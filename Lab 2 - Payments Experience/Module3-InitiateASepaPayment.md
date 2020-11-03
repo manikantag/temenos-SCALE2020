@@ -21,7 +21,7 @@ After completing the lab, you should be able to:
 
 **Initiating SEPA transaction**
 1. In this example we will use the following Payload to initiate SEPA payment
-`{
+```{
   "header": {},
   "body": {
       "paymentOrderProductId": "SEPA",
@@ -35,7 +35,8 @@ After completing the lab, you should be able to:
     "executionDate": "2020-04-17",
     "beneficiaryName": "GENERAL MOTORS"
   }
-}`
+}
+```
 
 2. In Postman API should be set to POST mode
 
