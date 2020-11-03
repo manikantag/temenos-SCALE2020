@@ -20,7 +20,7 @@ After completing the lab, you should be able to:
 **Initiating SEPA instant transaction**
 
 1.	In this example we will use the following Payload to initiate SEPA payment
-{
+```{
   {
       "header": {},
   "body": {
@@ -33,7 +33,7 @@ After completing the lab, you should be able to:
     "localInstrumentCode":"INST"
   }
 }
-
+```
 2. In Postman API should be set to POST mode
    
 
