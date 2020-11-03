@@ -44,7 +44,7 @@ Only the steps in this lab titled with the word “Optional” will require the 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/60.LoansOrigination1.png)
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/61.LoansOrigination2.png)
 
-*Note*: Make sure you give it a name that will tell it apart from the applications created by your peers during this lab —e.g.: Append your initials to the name of the application.
+*Note*: Make sure you give it a name that will tell it apart from the applications created by your peers during this lab - e.g.: Append your initials to the name of the application.
 
 4. Verify that the new Fabric app `LoansOrigination1` is imported.
 
@@ -104,13 +104,13 @@ Let's create a way for an end-user (a potential borrower) to submit an applicati
 
 1. Click the `User Task` activity, click the Properties tab to the right and rename it to `Submit Application`.
 
-75.TaskSubmitApplication
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/75.TaskSubmitApplication.png)
 
 **Note**: A user task is one that can later be surfaced — either through the API or a client application — for a user to interact with the workflow.
 
 4. In the Valid state transitions field, set the value to `New,Review,Rejected,Approved`.
 
-76.New,Review,Rejected,Approved
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/76.New,Review,Rejected,Approved.png)
 
 5. Add an `End` event to the workflow and connect the `Submit Application` task to it.
 
