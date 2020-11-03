@@ -55,7 +55,7 @@ After completing the lab, you should be able to:
 
 In the third module, we executed an API to initiate a SEPA Payment.
 
-At this point, we will move on to [Part 4](), where we will see how to initiate a SEPA instant payment.
+At this point, we will move on to [Part 4](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module4-InitiateASepaInstantPayment.md), where we will see how to initiate a SEPA instant payment.
 
 **Rate Temenos SCALE**
 

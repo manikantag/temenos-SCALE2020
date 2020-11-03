@@ -34,7 +34,7 @@ At the end of this lab you should be able to:
 
 In the second module, we executed an API to extract all the payment details for an ordering customer.
 
-At this point, we will move on to [Part 3](), we will initiate a SEPA payment transaction.
+At this point, we will move on to [Part 3](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module3-InitiateASepaPayment.md), we will initiate a SEPA payment transaction.
 
 **Rate Temenos SCALE**
 
