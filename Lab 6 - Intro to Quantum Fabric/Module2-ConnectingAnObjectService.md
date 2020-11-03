@@ -1,4 +1,4 @@
-# Connecting an Object Service
+# Module Two: Connecting an Object Service
 **Duration**: 30 mins
 
 **Prerequisite Software and Tools**

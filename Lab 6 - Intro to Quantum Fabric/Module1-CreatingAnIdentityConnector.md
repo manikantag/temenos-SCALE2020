@@ -1,4 +1,5 @@
-# Creating an Identity Connector
+# Module One: Creating an Identity Connector
+
 **Duration**: 30 mins
 
 **Prerequisite Software and Tools**

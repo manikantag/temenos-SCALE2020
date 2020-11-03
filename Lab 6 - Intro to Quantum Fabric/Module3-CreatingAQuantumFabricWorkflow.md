@@ -1,4 +1,4 @@
-# Creating a Quantum Fabric Workflow
+# Module Three: Creating a Quantum Fabric Workflow
 **Duration**: 30 mins
 
 **Prerequisite Software and Tools**
