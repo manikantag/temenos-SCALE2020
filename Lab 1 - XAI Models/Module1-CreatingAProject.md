@@ -61,8 +61,6 @@ For the purpose of this lab you can just leave the default configuration.
 
 In the first module we created a project, explored the audit warnings and set up the partitioning, so we are ready to start working on choosing the right features to build our models afterwards.
 
-At this point we will move on to [Module 2](xx) where we will focus on selecting features.
-
 **Rate Temenos SCALE**
 
 Let us know how we did via our [Feedback Survey](xx)
