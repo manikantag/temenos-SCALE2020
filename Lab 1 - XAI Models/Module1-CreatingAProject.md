@@ -10,13 +10,14 @@ Tasks: In this module you will be creating a binary classification project from 
 
 ## Module 1: Lab Instructions
 
-1. Landing page and create new project
+1. **Landing page and create new project**
 
 After login in into the Platform, you’ll be redirected to the landing page, where you can see all previously created projects. Your environment might be empty (i.e. no previous projects created). In order to create a new project, click on the “New Project” button.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image006.png)
 
-2.	Upload Wizard
+2. **Upload Wizard**
+
 *(I)*
 The upload wizard will start. You can either choose a local file using the “Upload File” button, or you can choose a previously uploaded file from the list. Use the “Lending Club.csv” file you have been provided with. 
 
@@ -38,16 +39,19 @@ In the next screen you can choose a name for your project. You can also set up u
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image014.png)
 
 3	**Project overview**
+
 The “Overview” page just highlights some relevant information about the project you have just created. 
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image016.png)
 
 4	**Audit**
+
 The dataset you will be using, Lending Club, is a very well curated dataset and should not flag any warnings, so the screenshot attached here belongs to a different dataset and only has illustrative purposes. The Platform can automatically detect some issues related to the dataset: perfectly correlated columns, columns containing a single value or being completely blank, etc. This issues can be manually addressed one by one or handled automatically by the Platform using the “Auto-Fix All” button. 
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image018.png)
 
 5	**Partitioning**
+
 When building a predictive model, the available data is usually split into three different subsets: training (the one used to fit the model), validation (used to prevent overfitting during the training process) and testing (unseen data to assess model performance once it is built). The “Partitioning” tab under the “Data Source” section allows you to configure the size of these subsets. The rest of the options can be looked up in the documentation. 
 For the purpose of this lab you can just leave the default configuration.  
 

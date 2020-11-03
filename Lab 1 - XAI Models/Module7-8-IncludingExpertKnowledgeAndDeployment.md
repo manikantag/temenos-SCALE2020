@@ -51,7 +51,8 @@ Here you can see all model-specific documentation you will need to use your mode
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image078.png)
 
-2	Cascading models into complex pipelines
+2. Cascading models into complex pipelines
+
 Models can be deployed not only in isolation, but also as part of a more complex pipeline to solve more complicated data science problems/tasks. These pipelines are use-case specific and have to be designed and addressed individually. The following figure depicts and existing pipeline for an insurance project, in which both a claim probability and a claim propensity models are used to calculated an expected loss, including aggregations across different properties within the same policy, to asses expected loss at a policy level. 
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%201%20-%20XAI%20Models/images/image080.png)
