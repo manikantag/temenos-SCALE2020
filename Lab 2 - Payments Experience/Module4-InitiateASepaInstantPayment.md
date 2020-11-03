@@ -20,7 +20,7 @@ After completing the lab, you should be able to:
 **Initiating SEPA instant transaction**
 
 1.	In this example we will use the following Payload to initiate SEPA payment
-`{
+{
   {
       "header": {},
   "body": {
@@ -32,7 +32,7 @@ After completing the lab, you should be able to:
     "endToEndReference": "InstantPaymentTest1",
     "localInstrumentCode":"INST"
   }
-}`
+}
 
 2. In Postman API should be set to POST mode
    
@@ -49,7 +49,7 @@ After completing the lab, you should be able to:
  
 8. The same payload with transparency is used in Body of this API
 
-`{
+{
        "header":{},
     "body": {
         "paymentCurrencyId": "EUR",
@@ -68,7 +68,7 @@ After completing the lab, you should be able to:
         "beneficiaryIBAN": "GB04BARC20474473160944",
         "paymentOrderProductId": "INSTPAY-OB"
     }
-   }`
+   }
  
 9. Execute the API by clicking Send
  
