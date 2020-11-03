@@ -1,29 +1,26 @@
-Module 4: Initiate a SEPA Instant payment
+## Module 4: Initiate A SEPA Instant Payment
 
-Purpose:	This lab introduces the subject of working with Payment API’s 
+**Duration**: 20 mins
+
+Purpose: This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
+- Initiate SEPA instant payment transactions
+- Check transparency details
 
-•	Initiate a SEPA instant payment transaction
-•	Use modified Payment API to return transparency check response
-	
-Tasks:	Tasks you will complete in this lab exercise include:
+**SEPA Instant transaction**
 
-•	Initiate SEPA instant payment transactions
-•	Check transparency details
+1.	To initiate a SEPA instant transaction, we are going to use https://api.temenos.com/api/v1.0.0/order/paymentOrders/sepaInstantTransfer
 
+2.	API documentation - https://apidocs.temenos.com/service/payment-orders#operation/createSepaInstantPayment
 
-Step	Action
-1	SEPA Instant transaction
-a.	To initiate a SEPA instant transaction, we are going to use https://api.temenos.com/api/v1.0.0/order/paymentOrders/sepaInstantTransfer
-b.	API documentation - https://apidocs.temenos.com/service/payment-orders#operation/createSepaInstantPayment
-c.	To post a payment, we will have to form the Payload. SEPA instant payment can accept various parameters in Payload Body. 
-d.	Parameters that can be used for initiating SEPA instant payment 
- 
+3.	To post a payment, we will have to form the Payload. SEPA instant payment can accept various parameters in Payload Body. 
 
+4.	Parameters that can be used for initiating SEPA instant payment 
 
-2	Initiating SEPA instant transaction
-a.	In this example we will use the following Payload to initiate SEPA payment
-{
+**Initiating SEPA instant transaction**
+
+1.	In this example we will use the following Payload to initiate SEPA payment
+`{
   {
       "header": {},
   "body": {
@@ -35,26 +32,24 @@ a.	In this example we will use the following Payload to initiate SEPA payment
     "endToEndReference": "InstantPaymentTest1",
     "localInstrumentCode":"INST"
   }
-}
+}`
 
-b.	In Postman API should be set to POST mode
+2. In Postman API should be set to POST mode
    
 
-c.	Payload should be set in Body section of the API
+3. Payload should be set in Body section of the API
  
-d.	To retrieve transparency details, API is executed with “validate_only” option set to true. To set this, add “validate_only” option in Params and set the value as “TRUE”
- 
+4. To retrieve transparency details, API is executed with “validate_only” option set to true. To set this, add “validate_only” option in Params and set the value as “TRUE”
 
+5. Execute the API by clicking Send
 
-e.	Execute the API by clicking Send
- 
- 
-f.	If transparency values are accepted then the payment can be executed using the API endpoint https://api.temenos.com/api/v1.0.0/order/paymentOrders
-g.	The payment Order ID returned in the previous step is used to execute the payment. PaymentOrder ID is added in the API url. This is a PUT request.
- 
-h.	The same payload with transparency is used in Body of this API
+6. If transparency values are accepted then the payment can be executed using the API endpoint https://api.temenos.com/api/v1.0.0/order/paymentOrders
 
-   {
+7. The payment Order ID returned in the previous step is used to execute the payment. PaymentOrder ID is added in the API url. This is a PUT request.
+ 
+8. The same payload with transparency is used in Body of this API
+
+`{
        "header":{},
     "body": {
         "paymentCurrencyId": "EUR",
@@ -73,14 +68,14 @@ h.	The same payload with transparency is used in Body of this API
         "beneficiaryIBAN": "GB04BARC20474473160944",
         "paymentOrderProductId": "INSTPAY-OB"
     }
-   }
+   }`
  
-
-
-i.	Execute the API by clicking Send
+9. Execute the API by clicking Send
  
- 
- 
-Module 4: Lab Summary
+**Module 4: Lab Summary**
 
 In the fourth module, we executed an API to initiate a SEPA instant Payment, checked transparency.
+
+**Rate Temenos SCALE**
+
+Let us know how we did via our [Feedback Survey]()
