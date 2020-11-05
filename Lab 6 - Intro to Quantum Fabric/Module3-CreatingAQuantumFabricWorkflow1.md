@@ -118,7 +118,7 @@ Let's create a way for an end-user (a potential borrower) to submit an applicati
 
 6. Click the SAVE button from the bottom right corner of the Console.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/image044.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/77.image044.png)
 
 **Pro Tip**: This is not really the end of the workflow. However, for a workflow to be in a consistent state, every possible flow must have an `End`. So provisionally adding an `End` event to every possible flow is just a good way to be able to save progress. We'll add more steps before the `End` node as we progress.
 
