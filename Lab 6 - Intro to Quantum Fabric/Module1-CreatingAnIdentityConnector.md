@@ -179,3 +179,9 @@ Tasks you will complete in this lab exercise include:
 
 **Module 1: Lab Summary**
 In the first module we imported a Visualizer app into our workspace. Then we learned how to create a Fabric app and Identity service using the user repository that comes with Quantim Fabric. Next we connected the client responsive web application to the identity service we created in Fabric. Once completed, we deployed the Fabric app and ran the client app from Visualizer. At this point we will move on to Part 2 and connecting your application to a Temenos Microservice. 
+
+Access [Module 2](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/Module2-ConnectingAnObjectService.md)
+
+**Rate Temenos SCALE**
+
+Let us know how we did via our [Feedback Survey]()

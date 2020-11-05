@@ -248,3 +248,9 @@ Tasks you will complete in this lab exercise include:
 
 **Module 2: Lab Summary**
 In this module, we created an integration service that exposes a backend service as a REST based service for application. We also learned how to decouple our backend integration service from our front in client app by building and deploying an object services that we mapped to our client app. In the next module, we will learn how to create a light weight workflow with Fabric workflow engine.
+
+Access [Module 3](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/Module3-CreatingAQuantumFabricWorkflow.md)
+
+**Rate Temenos SCALE**
+
+Let us know how we did via our [Feedback Survey]()
