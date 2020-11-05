@@ -8,7 +8,7 @@ At the end of this lab you should be able to:
 **Generating an API Key**
 1. An API Key is required to work with API’s available in https://apidocs.temenos.com/
 
-2. API Key can be generated in the link https://basecamp.temenos.com/s/
+2. API Key can be generated in the link https://basecamp.temenos.com/s/ (with a valid business email address)
 
 3. Create a login in https://basecamp.temenos.com/s/
 
