@@ -54,7 +54,7 @@ At the end of this lab you should be able to:
 
 In the first module, we executed an API to extract all the payment details
 
-At this point, we will move on to [Part 2](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module2-GetPaymentsBasedOnOrdering.md), where we will use the same API with query parameters to extract payment details of specific Ordering Customer.
+At this point, we will move on to [Module 2](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module2-GetPaymentsBasedOnOrdering.md), where we will use the same API with query parameters to extract payment details of specific Ordering Customer.
 
 **Rate Temenos SCALE**
 

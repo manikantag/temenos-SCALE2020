@@ -1,6 +1,6 @@
 ## Module 4: Initiate A SEPA Instant Payment
 
-**Duration**: 20 mins
+**Duration**: 30 mins
 
 Purpose: This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -46,10 +46,14 @@ After completing the lab, you should be able to:
 6. If transparency values are accepted then the payment can be executed using the API endpoint https://api.temenos.com/api/v1.0.0/order/paymentOrders
 
 7. The payment Order ID returned in the previous step is used to execute the payment. PaymentOrder ID is added in the API url. This is a PUT request.
- 
+
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image027.png)
+
 8. The same payload with transparency is used in Body of this API
 
-```{
+```
+  {
+    {
        "header":{},
     "body": {
         "paymentCurrencyId": "EUR",
@@ -68,11 +72,17 @@ After completing the lab, you should be able to:
         "beneficiaryIBAN": "GB04BARC20474473160944",
         "paymentOrderProductId": "INSTPAY-OB"
     }
-   }
+  }
    ```
- 
+
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image028.png)
+
 9. Execute the API by clicking Send
- 
+
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image029.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image030.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image031.png)
+
 **Module 4: Lab Summary**
 
 In the fourth module, we executed an API to initiate a SEPA instant Payment, checked transparency.

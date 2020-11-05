@@ -26,7 +26,7 @@ At the end of this lab you should be able to:
 
 3. To get list of all payments for a customer, add “?orderingCustomerId=<CustomerID>” in API link 
  
-4. Click Send to execute API, it will get all Payments for ordering customer 100343
+4. Click Send to execute API, it will get all Payments for ordering customer 100343. You must paste the payload in "raw" format and ensure your content type is set to "application/json” under Headers.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image009.png)
 
@@ -34,8 +34,8 @@ At the end of this lab you should be able to:
 
 In the second module, we executed an API to extract all the payment details for an ordering customer.
 
-At this point, we will move on to [Part 3](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module3-InitiateASepaPayment.md), we will initiate a SEPA payment transaction.
+At this point, we will move on to [Module 3](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module3-InitiateASepaPayment.md), we will initiate a SEPA payment transaction.
 
 **Rate Temenos SCALE**
 
-Let us know how we did via our [Feedback Survey]()
+Let us know how we did via our [Feedback Survey](xx)

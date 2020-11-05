@@ -4,11 +4,13 @@
 
 - [Postman](https://www.postman.com/)
 
-- [Temenos API Key](https://basecamp.temenos.com/s/getting-started-temenos)
+- [Temenos API Key*](https://basecamp.temenos.com/s/getting-started-temenos)
+
+You must register for your Temenos API Key with a business email address. 
 
 ## Module One: Getting all the Payment Details
 
-**Duration**: 20 mins
+**Duration**: 30 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -22,7 +24,7 @@ Tasks you will complete in this lab exercise include:
 
 ## Module Two: Get Payments based on Ordering Customer
 
-**Duration**: 20 mins
+**Duration**: 30 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -37,7 +39,7 @@ Tasks you will complete in this lab exercise include:
 
 ## Module Three: Initiate a SEPA payment
 
-**Duration**: 20 mins
+**Duration**: 30 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -52,7 +54,7 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 ## Module Four: Initiate a SEPA Instant payment
 
-**Duration**: 20 mins
+**Duration**: 30 mins
 
 At the end of this lab you should be able to:
 
