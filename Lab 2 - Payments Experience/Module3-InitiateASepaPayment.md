@@ -21,7 +21,9 @@ After completing the lab, you should be able to:
 
 **Initiating SEPA transaction**
 1. In this example we will use the following Payload to initiate SEPA payment
-```{
+```
+{
+  {
   "header": {},
   "body": {
       "paymentOrderProductId": "SEPA",
