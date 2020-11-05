@@ -224,7 +224,8 @@ Let's first test a loan application by a borrower with an excellent credit score
 
 7. Repeat step #5 and #6 with this payload:
 
-```{
+```
+{
 	"idDoc": "123-1234-005",
 	"status": "New",
 	"firstName": "Jon",
