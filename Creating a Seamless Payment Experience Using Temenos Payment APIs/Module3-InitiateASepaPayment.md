@@ -13,11 +13,11 @@ After completing the lab, you should be able to:
 3. To post a payment, we will have to form the Payload. Payment can accept various parameters in Payload Body. 
 4. Parameters that can be used for initiating a payment 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image011.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image012.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image013.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image014.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image015.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image011.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image012.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image013.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image014.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image015.png)
 
 **Initiating SEPA transaction**
 1. In this example we will use the following Payload to initiate SEPA payment
@@ -42,23 +42,23 @@ After completing the lab, you should be able to:
 
 2. In Postman API should be set to POST mode
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image016.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image016.png)
 
 3. Payload should be set in Body section of the API
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image017.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image017.png)
 
 4. Execute the API by clicking Send, if Successful a transaction Status would be Success and a Payment Reference would be returned
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image018.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image019.png)
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/images/image020.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image018.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image019.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image020.png)
 
 **Module 3: Lab Summary**
 
 In the third module, we executed an API to initiate a SEPA Payment.
 
-At this point, we will move on to [the fourth and final module](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module4-InitiateASepaInstantPayment.md), where we will see how to initiate a SEPA instant payment.
+At this point, we will move on to [the fourth and final module](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module4-InitiateASepaInstantPayment.md), where we will see how to initiate a SEPA instant payment.
 
 **Rate Temenos SCALE**
 

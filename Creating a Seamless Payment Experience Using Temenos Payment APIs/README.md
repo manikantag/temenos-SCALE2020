@@ -20,7 +20,7 @@ Tasks you will complete in this lab exercise include:
 
 - Retrieve details of all the payments executed 
 
-[View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module1-GetAllPaymentDetails.md)
+[View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module1-GetAllPaymentDetails.md)
 
 ## Module Two: Get Payments based on Ordering Customer
 
@@ -35,7 +35,7 @@ Tasks you will complete in this lab exercise include:
 
 - Get list of all Payments by Customer Number
 
-[View Module Two README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module2-GetPaymentsBasedOnOrdering.md)
+[View Module Two README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module2-GetPaymentsBasedOnOrdering.md)
 
 ## Module Three: Initiate a SEPA payment
 
@@ -50,7 +50,7 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 - Initiate payment transactions
 
-[View Module Three README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module3-InitiateASepaPayment.md)
+[View Module Three README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module3-InitiateASepaPayment.md)
 
 ## Module Four: Initiate a SEPA Instant payment
 
@@ -66,7 +66,7 @@ Tasks: Tasks you will complete in this lab exercise include:
 - Initiate SEPA instant payment transactions
 - Check transparency details
 
-[View Module Four README.md](https://github.com/temenos/SCALE2020/blob/main/Lab%202%20-%20Payments%20Experience/Module4-InitiateASepaInstantPayment.md)
+[View Module Four README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module4-InitiateASepaInstantPayment.md)
 
 **Rate Temenos SCALE**
 
