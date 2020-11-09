@@ -98,7 +98,7 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 4. Position the flxHeader into postion using the Look subtab under Properties on the right panel. Since this will serv as our header, we want it at anchored at the top. Set the Left and Top Values to 0Dp. Width and height can be precisely adjusted to requirements, but the defaults are excellent for our walkthrough.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.gif)
 
 5.	Now, drag and drop an image widget into the flxHeader, rename it to imgHeader and apply the positions as in the screenshot below:
 
