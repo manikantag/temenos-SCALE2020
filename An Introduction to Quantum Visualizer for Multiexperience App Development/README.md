@@ -1,4 +1,4 @@
-# An Introduction to Quantum Fabric Capabilities and Microservice Integration
+# An Introduction to Quantum Visualizer for Multiexperience App Development
 
 **Prerequisite Software and Tools**
 
@@ -14,7 +14,7 @@
 
 3.	Documentation link to get started - https://basecamp.temenos.com/s/getting-started 
 
-4.	Download starter package for the exercise - XXX
+4.	Download starter package for the exercise - TemenosBankExport.zip / DonutChartExport.zip & SCALE_import.zip
 
 5.	Create a Temenos Fabric account if you are not a registered developer using https://manage.kony.com/registration. 
 
@@ -27,11 +27,11 @@
 
 2. Click the Project menu and then click New Project. The What do you want to start with now? screen of the New Project wizard appears.
 
-image001
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image001.png)
 
 3. Select Native App in the wizard and provide project name of your choice. This document will use the project name as TemenosBank. Select Create to generate a new application in Visualizer.
 
-image003
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image003.png)
 
 ## Getting started with Quantum Visualizer 
 
@@ -57,60 +57,58 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 1. The application first opens in the Storyboard view. You can view the different forms inside the app and their connections in this view. To view the Properties of each widget in a form, double click on any form to go to the Design View. You can also select the Design tab to navigate to the Design View.
 
-image005
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image005.png)
  
 2. Project structure should now be visible on the left panel of the Visualizer. The Project explorer contains options to create apps for mobile, tablet, responsive web and wearable form factors. Using the form in each channel, you can create the user interface of an app.
 
-image006
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image006.png)
 
 3. The Canvas is the work area where you design an app. By selecting a device and a platform from its drop-down menus, you can view how your app UI will look on a device without leaving Quantum Visualizer.
 
-image007
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image007.png)
 
 4. The Default Library is a collection of widgets, UI components, and icons. The components are the building blocks that allow you to create an app. The icons and components are grouped based on their usage. Explore the collection by scrolling the list or use the search option for finding anything specific.
 
-image008
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image008.png)
 
 5.	The Properties panel on the right of Visualizer lets you change the layout and the look and feel of the forms and widgets on the Canvas. 
 
-image013
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image0013.png)
 
 6. The Data & Services panel, also on the right, enables you to link the back-end data services to your app's user interface elements. The sample services in the Data & Services panel helps you to add a service to your app.
 
-image010
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image010.png)
 
 7.	The bottom section under the canvas houses Console,  displays the running record of Quantum Visualizer's every activity. It also informs you of any failed action by showing an error while you initialize services, build your app or launch it.
 
-image018
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image018.png)
 
 8.	The Build menu helps you to preview your app or build and publish it to your Quantum Cloud account. You can either preview your app live or on the Quantum App.
 
-image019
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image019.png)
 
 **Drag and Drop to build the UI**
 
 1. Right click on Form1 in the project explorer and rename the form to Login. To save the current work, use ctrl + S / cmd + S.
 2. To start creating UI for mobile and other form factors, From the Default Library tab on the bottom left of your canvas, start by dragging and dropping a widget/collection of choice into the device shown on the canvas. Tip: Use Hikes to revisit any basic concepts from the left panel 
 
-image022
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image022.png)
 
 3. For this exercise, drag and drop the FlexContainer widget onto the Login form on the canvas. Select the newly added FlexContainer widget from the Project explorer on the top left of your canvas. Right-click on the FlexContainer and rename flxHeader.
 
-image023
-
-## Video: Double click to play
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image023.png)
 
 4. Position the flxHeader into postion using the Look subtab under Properties on the right panel. Since this will serv as our header, we want it at anchored at the top. Set the Left and Top Values to 0Dp. Width and height can be precisely adjusted to requirements, but the defaults are excellent for our walkthrough.
 
-image026
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.png)
 
 5.	Now, drag and drop an image widget into the flxHeader, rename it to imgHeader and apply the positions as in the screenshot below:
 
-image026
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.png)
 
 6. Switch over to the Image tab or double click on the image widget in the canvas to set the image to a logo of your choice. For this example, we are using the following image.
 
-image029
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image029.png)
 
 *****************************************************************
 
@@ -118,12 +116,8 @@ image029
 1.	For this section we’ll explore using Skins tab for the widgets to add some color to our app.
 2.	Please import the starter application from <git>. Use Project > Import > Local Project > Add to Current Project > From an Archive and point to the archive downloaded from Git.
 
-
-
 3.	Select the Login form and switch to Skins tab under properties on the right panel.
 4.	Use the dropdown for Background type and select Image. Using the Browse option, click next to default and search then select loginbgradient.png as the option.
-
-## Video: Double click to play
 
 **Using Components to rapidly build you UI/UX**
 
@@ -216,15 +210,8 @@ c.	Once the build and publish is successful, you will see the application URL as
  
 d.	The Build Native Local is used to build the native apps. You can use the Post Build Action to direct Visualizer to generate the binaries, publish to Visualizer store or to run the app on simulators or devices connected to the developer’s machine.
      
-Please follow the prerequisites for iOS builds here.
-Please follow the prerequisites for Android builds here.
-
-
-
-
-
-
-
+Please follow the prerequisites for iOS builds [here](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#BuildAnAppForiOS.htm).
+Please follow the prerequisites for Android builds [here](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#BuildAnAppForAndroid.htm).
 
 **Rate Temenos SCALE**
 
