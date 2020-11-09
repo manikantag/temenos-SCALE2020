@@ -27,21 +27,21 @@ Tasks you will complete in this lab exercise include:
 
 2. Click the Fabric icon in the left side navigation.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/2.FabricIcon.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/2.FabricIcon.png)
  
 3. Your client app should already be linked to a Fabric app since a fabric app is automatically created when we created our identity service in the [last module](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/ModuleOne-CreatingAnIdentityConnector.md). Here is my BankingDemoApp. Note- IF you create a new app, Fabric defaults the name of the Fabric app to match your Visualizer app.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/21.BankingDemoApp.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/21.BankingDemoApp.png)
 
 **Create New Integration Service**
 
 1. If your integration tab isn’t selected, select the Integration tab.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/27.CreateNewIntegrationService.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/27.CreateNewIntegrationService.png)
 
 2. Click Configure New.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/28.ServiceDefinition.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/28.ServiceDefinition.png)
 
 3. Enter MarketServices for the Name. This will be the name of the integration service, and it represents the request and response to the back end that we will map to the object model later in the module. 
 
@@ -55,7 +55,7 @@ Tasks you will complete in this lab exercise include:
 
 1. In the Name text field, type Products. 
  
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/29.ProductProducts.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/29.ProductProducts.png)
 
 2. In the suffix field, add the following: /v1.0.0/product/products
 
@@ -63,7 +63,7 @@ Tasks you will complete in this lab exercise include:
 
 4. In the Request Input section, select Header. It’s **very important** you select the Header
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/30.RequestInputHeader.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/30.RequestInputHeader.png)
 
 5. Select the Add Parameter button. We need to add an API key in the session header.
 
@@ -71,41 +71,41 @@ Tasks you will complete in this lab exercise include:
 
 7. For the default value, type `VkWTvp5H6F6FwiGIYFDzh56dDv4I1bv0akVrrjhk`. This value is the key for the Temenos Marketing Microservice.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/31.SaveAndFetch.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/31.SaveAndFetch.png)
 
 8. Click the Save and Fetch Response button at the bottom of the screen. This will return a backend response. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/32.BackendResponse1.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/32.BackendResponse1.png)
 
 9. Check to make sure your Backend Response returned a JSON object in the Backend Response pane that is visible after you clicked the Save and Fetch Response button. If there isn’t a response. Click the Save and Fetch Response button a second time.  Notice at this point, there isn’t any output in the output result. Filter the backend response into our output result that the integration service response with. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/33.BackendResponse2.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/33.BackendResponse2.png)
 
 10. From the center panel, find the products node and right click the node and click Create response.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/34.CreateResponse.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/34.CreateResponse.png)
 
 11. This will fill the output response inside the service mapping with all the attributes within the product node, including any arrays of objects on any sub-nodes. We don’t need all the information provided, so let’s remove some of the data to create a concise response. Let’s remove all the data below the extensionData by clicking each field from Extension data to the last field in the response and click delete. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/35.RemoveAttributes.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/35.RemoveAttributes.png)
 
 12. Once the attributes are removed, the screenshot above shows the remaining attributes we want to keep. Click Save and Fetch.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/36.OutputPanel.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/36.OutputPanel.png)
 
 13. Look in the output result panel. Now, the result returns the attributes we filtered from the backend service call to create a concise response for our multi-experience apps. Now, we have an integration service that we can connect to our app.  In the next section, we will decouple the backend integration service with our client app using an object service. 
 
 **Create an Object Service**
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/37.ObjectsTab.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/37.ObjectsTab.png)
 
 1. Select the Objects tab. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/38.ConfigureNew.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/38.ConfigureNew.png)
 
 2. Select Configure New.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/39.NameYourObject.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/39.NameYourObject.png)
 
 3. Name your Object service Marketing. 
 
@@ -113,11 +113,11 @@ Tasks you will complete in this lab exercise include:
 
 5. Click the Save and Configure button.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/40.ObjectServiceNoDataModels.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/40.ObjectServiceNoDataModels.png)
 
 6. At this point, we have an object service without any object. Notice in the left side panel, we don’t have a data model yet. The data model defines how a client app maps request and response data into the Fabric app.  You can configure your own data model, even if the back end doesn’t exist by clicking the configure New button, but let’s generate a data mode from our existing Integration service. Click the Generate button.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/41.GenerateAppDataModelFromExistingServices.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/41.GenerateAppDataModelFromExistingServices.png)
 
 7. Next, create an object named MKTProducts. 
 
@@ -125,11 +125,11 @@ Tasks you will complete in this lab exercise include:
 
 9. Click Generate.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/42.DataModel.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/42.DataModel.png)
 
 10. Now, our data panel has a data model. Click the mapping tab. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/43.DataMappingTab.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/43.DataMappingTab.png)
 
 11. Now, we need to map our backend service to our data model. Click the productDescription in the left
 
@@ -141,13 +141,13 @@ Tasks you will complete in this lab exercise include:
 
 15. Click the add mapping button.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/44.ResponseMapping.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/44.ResponseMapping.png)
  
 16. The Fabric console displays the current mapping between our prodDescription object and our backend services. Click the Response Mapping tab.
 
 17. Click the Edit button.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/45.DragResponseMapping.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/45.DragResponseMapping.png)
 
 18. Drag the mapping from the Service on the left to the object on the right until each attribute is mapped. 
 
@@ -157,10 +157,10 @@ Tasks you will complete in this lab exercise include:
 
 1. Now, we can test the service. Click the Test Tab.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/46.Test.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/46.Test.png)
 
 2.	Click Send.
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/47.Response.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/47.Response.png)
 
 3.	When we send the request to the object service, the object service calls the integration service, and the response is mapped back into the response of the object service. 
 
@@ -169,7 +169,7 @@ Tasks you will complete in this lab exercise include:
 **Deploy Fabric App**
 1.	Select the Publish tab.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/22.ConfigAndPublish.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/22.ConfigAndPublish.png)
 
 2. The Publish tab shows all the available environments you can publish to within your account. In my case, I only have one environment to publish to, XAI POC. Click the circle beside the instance you want to deploy to. When you do, A checkmark will appear for that instance.
 
@@ -177,7 +177,7 @@ Tasks you will complete in this lab exercise include:
 
 4.	When the application is published, the publication window will show a green checkmark. 
  
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/23.PublishedAppDetails.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/23.PublishedAppDetails.png)
 
 5.	Close your browser, and open your Visualizer app.
 
@@ -186,13 +186,13 @@ Tasks you will complete in this lab exercise include:
 1. Let’s pick up our app where we left off on the identity module. Select the Data & Services Tab.
 2. Hit the Refresh button 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/49.TemenosBank.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/49.TemenosBank.png)
 
 3. Notice from this screen, we can see both the integration service and the object service.  If we deleted the integration service at this point, the object service would remain, and we could map a new service to the object service without needed to remap the service to the client app.  If we chose the integration service here, and changed the service, we would need to map the client to the new service that may now have the same field names that the previous service did. 
 
 4.	In the left side navigation, click Responsive Web > Forms > frmTerms. This will bring up the terms and conditions page. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/50.DataPanel.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/50.DataPanel.png)
 
 5.	In the right hand panel, make sure you’re on Panel, make sure you’re on Data and Services. 
 
@@ -200,27 +200,27 @@ Tasks you will complete in this lab exercise include:
 
 7.	Expand the project services and click the ProdDescription microservice we created.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/51.ProjectServices.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/51.ProjectServices.png)
 
 8.	Drag the get operation onto your terms and conditions form. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/52.DataMappingOptions.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/52.DataMappingOptions.png)
 
 9. Once you drag the get operation on the screen, Visualizer will give you 3 options for mapping the data. The first option will autogenerate a List & Details template to show the data, the second will present the data in an autogenerated grid layout. The third options will let us map the data from the response to the form. Choose Detail Using Response.
 
 10. Now, drag the detailedDescription from the data panel into the first text box under the Advance Checking Label.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/53.AdvanceCheckingLabel.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/53.AdvanceCheckingLabel.png)
 
 11.	Now drag the termsConditions attribute onto the second text box.
 
 12.	If you want to see the client side workflow generated by Visualizer, select the properties in the right hand tab.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/54.OnMappingActions.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/54.OnMappingActions.png)
 
 13.	Select Edit on the onMapping action. This will bring up the workflow.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/55.Workflow.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/55.Workflow.png)
 
 14.	You can see that Visualizer created a number of workflow steps. If you want to edit any of the steps, you can easily edit the workflows from here.
 15.	Hit cancel or save. Now, let’s look at our app in Action.
@@ -228,17 +228,17 @@ Tasks you will complete in this lab exercise include:
 **Run The App In Live Preview**
 1.	From the top menu, select Build > Live Preview Settings
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/56.Build.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/56.Build.png)
 
 2.	Ensure the responsive web checkbox is selected
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/25.ResponsiveWebCheck.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/25.ResponsiveWebCheck.png)
 
 3.	Click Save and Run.
 
 4.	This will locally compile your app as a responsive web app and start the preview browser.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/assets/26.PublishedWebApp.png)
+![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/26.PublishedWebApp.png)
  
 5.	Login to the application suing the credentials you created in the first part of this lab in your user repository.
 
@@ -249,7 +249,7 @@ Tasks you will complete in this lab exercise include:
 **Module 2: Lab Summary**
 In this module, we created an integration service that exposes a backend service as a REST based service for application. We also learned how to decouple our backend integration service from our front in client app by building and deploying an object services that we mapped to our client app. In the next module, we will learn how to create a light weight workflow with Fabric workflow engine.
 
-Access [Module 3](https://github.com/temenos/SCALE2020/blob/main/Lab%206%20-%20Intro%20to%20Quantum%20Fabric/Module3-CreatingAQuantumFabricWorkflow.md)
+Access [Module 3](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/Module3-CreatingAQuantumFabricWorkflow.md)
 
 **Rate Temenos SCALE**
 
