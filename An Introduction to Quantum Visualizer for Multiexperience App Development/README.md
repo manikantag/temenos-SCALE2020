@@ -92,8 +92,6 @@ Tasks:	Tasks you will complete in this lab exercise include:
 1. Right click on Form1 in the project explorer and rename the form to Login. To save the current work, use ctrl + S / cmd + S.
 2. To start creating UI for mobile and other form factors, From the Default Library tab on the bottom left of your canvas, start by dragging and dropping a widget/collection of choice into the device shown on the canvas. Tip: Use Hikes to revisit any basic concepts from the left panel 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image022.png)
-
 3. For this exercise, drag and drop the FlexContainer widget onto the Login form on the canvas. Select the newly added FlexContainer widget from the Project explorer on the top left of your canvas. Right-click on the FlexContainer and rename flxHeader.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image023.png)
