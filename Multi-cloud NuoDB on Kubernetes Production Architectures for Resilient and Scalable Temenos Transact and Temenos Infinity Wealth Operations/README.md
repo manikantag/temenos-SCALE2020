@@ -1,4 +1,5 @@
-# SCALE2020
+# Multi-cloud NuoDB on Kubernetes Production Architectures for Resilient and Scalable Temenos Transact and Temenos Infinity Wealth Operations
+
 Please make use of the SCALE NuoDB Runbook.pdf for this Hands-on Lab!
 
 **Rate Temenos SCALE**
