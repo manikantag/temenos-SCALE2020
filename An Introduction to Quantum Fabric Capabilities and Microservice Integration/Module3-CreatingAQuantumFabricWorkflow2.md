@@ -63,6 +63,7 @@ Now let's update the loan application with the score we got from the credit bure
 9.	Click the SAVE button in the modal and then click the SAVE button in the bottom right corner of the Console.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/image069.png)
+
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/image071.png)
 
 **Test Our Progress So Far (Optional)**
