@@ -8,7 +8,7 @@ Please select the Lab you would like to visit, from the following:
 - [Training and Deploying Models with Temenos AI Platform](https://github.com/temenos/SCALE2020/tree/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform)
 - [Event Driven Microservices: The Secret Sauce of Great Applications](xx)
 - [Creating a Seamless Payment Experience Using Temenos Payment APIs](https://github.com/temenos/SCALE2020/tree/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs)
-- [An Introduction to Quantum Visualizer for Multiexperience App Development](xx)
+- [An Introduction to Quantum Visualizer for Multiexperience App Development](https://github.com/temenos/SCALE2020/tree/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development)
 - [An Introduction to Quantum Fabric Capabilities and Microservice Integration](https://github.com/temenos/SCALE2020/tree/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration)
 - [Next Generation User Experiences with Quantum Visualizer](xx)
 
