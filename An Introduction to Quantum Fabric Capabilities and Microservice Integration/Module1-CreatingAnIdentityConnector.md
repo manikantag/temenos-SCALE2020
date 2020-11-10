@@ -146,7 +146,7 @@ Tasks you will complete in this lab exercise include:
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/22.ConfigAndPublish.png)
 
-5. The Publish tab shows all the available environments you can publish to within your account. In my case, I only have one environment to publish to, XAI POC. Click the circle beside the instance you want to deploy to. When you do, a checkmark will appear for that instance. 
+5. The Publish tab shows all the available environments you can publish to within your account. In my case, I only have one environment to publish to, XAI POC. Click the greyed out circle with a check beside the instance you want to deploy to. When you do, the checkmark will and circle will turn blue  for that instance. 
 
 6. Click the Publish button.
 

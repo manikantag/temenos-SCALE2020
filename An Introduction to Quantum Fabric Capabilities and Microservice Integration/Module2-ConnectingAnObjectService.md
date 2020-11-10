@@ -47,7 +47,7 @@ Tasks you will complete in this lab exercise include:
 
 4. Quantum Fabric allows users to choose from a variety of back end services to expose to the end user, including JSON,XML,SOAP and many others. This allows a developer to select many different types of integrations and expose them as RESTful JSON services to end user experiences. Select JSON for the service type in the dropdown.
 
-5. Enter [https://ase3skcx80.execute-api.us-east-1.amazonaws.com/stage-scale/](https://ase3skcx80.execute-api.us-east-1.amazonaws.com/stage-scale/) for the base URL. This points to the Temenos microservice base marketing microservices.
+5. Enter [https://qjrs5ffz2j.execute-api.us-east-2.amazonaws.com/test-sone](https://qjrs5ffz2j.execute-api.us-east-2.amazonaws.com/test-sone) for the base URL. This points to the Temenos microservice base marketing microservices.
 
 6. Click Save and Add Operation.
 
@@ -69,7 +69,7 @@ Tasks you will complete in this lab exercise include:
 
 6. For the name of the key, type x-api-key.
 
-7. For the default value, type `VkWTvp5H6F6FwiGIYFDzh56dDv4I1bv0akVrrjhk`. This value is the key for the Temenos Marketing Microservice.
+7. For the default value, type `kSXstPJMY86SCV81K0aQ53AqVFr3Radf7BkQ4RY1`. This value is the key for the Temenos Marketing Microservice.
 
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/31.SaveAndFetch.png)
 
