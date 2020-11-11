@@ -57,7 +57,7 @@ Tasks you will complete in this lab exercise include:
  
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/29.ProductProducts.png)
 
-2. In the suffix field, add the following: /v1.0.0/product/products
+2. In the suffix field, add the following: /v2.0.0/product/ADVANCED.CHECKING.ACCOUNT/currencies/USD
 
 3. For this operation, we need to fetch some data, so we will keep the target HTTP method as GET.
 
