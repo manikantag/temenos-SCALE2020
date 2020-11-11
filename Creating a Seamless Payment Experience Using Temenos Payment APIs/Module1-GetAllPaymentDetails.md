@@ -1,6 +1,6 @@
 ## Module One: Use a Payment API to retrieve finished payments
 
-**Duration**: 30 mins
+**Duration**: 7 mins
 
 At the end of this lab you should be able to:
 - Get details of all the payments executed 

@@ -1,6 +1,6 @@
 ## Module 4: Initiate a payment using a new API
 
-**Duration**: 30 mins
+**Duration**: 7 mins
 
 Purpose: This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:

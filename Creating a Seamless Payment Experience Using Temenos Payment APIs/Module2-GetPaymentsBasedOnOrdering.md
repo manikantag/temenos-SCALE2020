@@ -1,6 +1,6 @@
 ## Module 2: Retrieve a specific payment
 
-**Duration**: 30 mins
+**Duration**: 7 mins
 
 At the end of this lab you should be able to:
 - Get all payments executed for a Customer
