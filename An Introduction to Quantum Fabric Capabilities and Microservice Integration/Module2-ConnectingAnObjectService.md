@@ -210,6 +210,8 @@ Tasks you will complete in this lab exercise include:
 
 10. Now, drag the detailedDescription from the data panel into the first text box under the Advance Checking Label.
 
+![image](https://pocket-syndicated-images.s3.amazonaws.com/5e4ad0551998c.jpg)
+
 ![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/53.AdvanceCheckingLabel.png)
 
 11.	Now drag the termsConditions attribute onto the second text box.
