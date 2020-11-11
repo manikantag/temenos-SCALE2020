@@ -1,4 +1,4 @@
-## Module 4: Initiate A SEPA Instant Payment
+## Module 4: Initiate a payment using a new API
 
 **Duration**: 30 mins
 

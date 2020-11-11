@@ -8,9 +8,9 @@
 
 You must register for your Temenos API Key with a business email address. 
 
-## Module One: Getting all the Payment Details
+## Module One: Use a Payment API to retrieve *finished payments*
 
-**Duration**: 30 mins
+**Duration**: 5 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -22,9 +22,9 @@ Tasks you will complete in this lab exercise include:
 
 [View Module One README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module1-GetAllPaymentDetails.md)
 
-## Module Two: Get Payments based on Ordering Customer
+## Module Two: Retrieve a *specific payment*
 
-**Duration**: 30 mins
+**Duration**: 5 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -37,9 +37,9 @@ Tasks you will complete in this lab exercise include:
 
 [View Module Two README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module2-GetPaymentsBasedOnOrdering.md)
 
-## Module Three: Initiate a SEPA payment
+## Module Three: Initiate a *SEPA payment*
 
-**Duration**: 30 mins
+**Duration**: 5 mins
 
 This lab introduces the subject of working with Payment API’s 
 After completing the lab, you should be able to:
@@ -52,9 +52,9 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 [View Module Three README.md](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/Module3-InitiateASepaPayment.md)
 
-## Module Four: Initiate a SEPA Instant payment
+## Module Four: Initiate a payment using a new API
 
-**Duration**: 30 mins
+**Duration**: 5 mins
 
 At the end of this lab you should be able to:
 

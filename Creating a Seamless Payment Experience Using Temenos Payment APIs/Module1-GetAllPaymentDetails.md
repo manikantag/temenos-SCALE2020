@@ -1,4 +1,4 @@
-## Module One: Get all payment details
+## Module One: Use a Payment API to retrieve finished payments
 
 **Duration**: 30 mins
 

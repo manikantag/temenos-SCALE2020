@@ -1,4 +1,4 @@
-## Module 2: Get Payments based on Ordering Customer
+## Module 2: Retrieve a specific payment
 
 **Duration**: 30 mins
 
