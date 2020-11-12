@@ -14,7 +14,7 @@ At the end of this lab you should be able to:
 
 4. Query Parameters – Following are the query parameters with which this API can be executed, we will be using the parameter `orderingCustomerId`
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image011.png)
+![image](images/image011.png)
 
 **Filtering using query parameter**
 
@@ -22,13 +22,13 @@ At the end of this lab you should be able to:
 
 2. Specify the API link in postman
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image005.png)
+![image](images/image005.png)
 
 3. To get list of all payments for a customer, add “?orderingCustomerId=<CustomerID>” in API link 
  
 4. Click Send to execute API, it will get all Payments for ordering customer 100343. You must paste the payload in "raw" format and ensure your content type is set to "application/json” under Headers.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image009.png)
+![image](images/image009.png)
 
 **Module 2: Lab Summary**
 

@@ -14,7 +14,7 @@ At the end of this lab you should be able to:
 
 4. Once logged in click Getting Started with Temenos APIs 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image002.png)
+![image](images/image002.png)
 
 5. Click Request Key link, once done you should receive the key in email.
 
@@ -26,7 +26,7 @@ At the end of this lab you should be able to:
 
 3. Query Parameters – Following are the query parameters with which this API can be executed
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image003.png)
+![image](images/image003.png)
 
 **Executing API in postman**
 
@@ -34,21 +34,21 @@ At the end of this lab you should be able to:
 
 2. In Postman click on APIs and then open a new tab on the right side
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image004.png)
+![image](images/image004.png)
 
 3. Specify the API link in postman 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image005.png)
+![image](images/image005.png)
 
 4. Generated API Key in the previous step should be added in the Header
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image006.png)
+![image](images/image006.png)
 
 5. If API executed without API key, you will receive a ‘failedToResolveAPIKey’ error.
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image007.png)
+![image](images/image007.png)
 
 6. Click ‘Send’ in Postman to execute the API.
 
 7. If executed successfully, Status will be 200 OK and the all Payment details will be available in body. 
-![image](https://github.com/temenos/SCALE2020/blob/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs/images/image008.png)
+![image](images/image008.png)
 
 **Module 1: Lab Summary**
 
