@@ -1,0 +1,501 @@
+#------------------------------------------------------------------------------------------------
+#- Docker compose file for SCALE 2020 Demo Application on Event Driven Microservices Architecture
+#------------------------------------------------------------------------------------------------
+---
+version: "3.6"
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:4.1.1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
+    extra_hosts:
+      - "moby:127.0.0.1"
+    ports:
+      - "32181:32181"
+ 
+  kafka:
+    image: confluentinc/cp-kafka:4.1.1
+    depends_on:
+      - zookeeper
+    ports:
+      - "29092:29092"
+      - "10102:10102"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_HOST_NAME: ${KAFKA_ADVERTISED_HOST_NAME:-kafka}
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:32181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${KAFKA_ADVERTISED_HOST_NAME:-kafka}:29092
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+    extra_hosts:
+      - "moby:127.0.0.1"
+
+  mongo1:
+    container_name: 'evst-mongo1'
+    image: temninnohubscale2020.azurecr.io/mongo1:1.0
+    ports:
+      - "30007:27017"
+    command: --quiet
+
+  mongo2:
+    container_name: 'evst-mongo2'
+    image: temninnohubscale2020.azurecr.io/mongo2:1.0    
+    ports:
+      - "30008:27017" 
+    command: --quiet
+
+  mongo3:
+    container_name: 'evst-mongo3'
+    image: temninnohubscale2020.azurecr.io/mongo3:1.0    
+    ports:
+      - "30009:27017"
+    command: --quiet
+
+  mongosetup:
+    container_name: 'evst-mongosetup'
+    image: temninnohubscale2020.azurecr.io/mongosetup:1.0 
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+    environment:
+      MONGO1_HOST: mongo1
+      MONGO1_PORT: 27017
+      MONGO2_HOST: mongo2
+      MONGO2_PORT: 27017
+      MONGO3_HOST: mongo3
+      MONGO3_PORT: 27017
+
+  mysql1:
+    container_name: 'evst-mysql1'
+    image: temninnohubscale2020.azurecr.io/mysql1:1.0     
+    shm_size: "1gb"
+    ports:
+      - "3309:3306" 
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ms_eventstore
+
+  mysql2:
+    container_name: 'evst-mysql2'
+    image: temninnohubscale2020.azurecr.io/mysql2:1.0    
+    shm_size: "1gb"
+    ports:
+      - "3310:3306" 
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ms_service_orchestrator
+
+  eventstore-ibingester:
+    container_name: 'evst-eventstore-ibingester'
+    image: temninnohubscale2020.azurecr.io/eventstore-ibingester:1.0    
+    depends_on:
+      - mysql1
+    ports:
+      - "40501:40500"
+    environment:
+      DATABASE_KEY: sql
+      DATABASE_NAME: ms_eventstore
+      DRIVER_NAME: com.mysql.jdbc.Driver
+      DIALECT: org.hibernate.dialect.MySQL5InnoDBDialect
+      DB_CONNECTION_URL: jdbc:mysql://mysql1:3306/ms_eventstore
+      DB_USERNAME: root
+      DB_PASSWORD: root 
+      temn_msf_name: ms-eventstore
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_ingest_source_stream: ms-eventstore-inbox-topic
+      temn_msf_ingest_source_stream_consumergroup_id: ms-eventstore-ingester-consumer
+      temn_msf_ingest_error_stream: ms-eventstore-error-topic
+      temn_msf_ingest_sink_error_enabled: "false"
+      temn_msf_ingest_sink_error_stream_producer_id: ms-eventstore-ingester-error-producer
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_msf_ingest_event_processor: com.temenos.microservice.eventstore.ingester.EventHandlerImpl
+      temn_msf_exec_env: server
+      # temn_msf_raise_received_event: "true"
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_ingest_is_avro_event_ingester: "false"
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka 
+
+  eventstore-ioprocessor:
+    container_name: 'evst-eventstore-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/eventstore-ioprocessor:1.0    
+    ports:
+      - "40502:40500"
+    environment:
+      DATABASE_KEY: sql
+      DATABASE_NAME: ms_eventstore
+      DRIVER_NAME: com.mysql.jdbc.Driver
+      DIALECT: org.hibernate.dialect.MySQL5InnoDBDialect
+      DB_CONNECTION_URL: jdbc:mysql://mysql1:3306/ms_eventstore
+      DB_USERNAME: root
+      DB_PASSWORD: root 
+      temn_msf_name: ms-eventstore
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_msf_ingest_event_processor: com.temenos.microservice.eventstore.ingester.EventHandlerImpl
+      class_package_name: com.temenos.microservice.eventstore.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+
+  orchestrator-ibingester:
+    container_name: 'evst-orchestrator-ibingester'
+    image: temninnohubscale2020.azurecr.io/orchestrator-ibingester:1.0    
+    ports:
+      - "40503:40500"
+    environment:
+      DATABASE_KEY: sql
+      DATABASE_NAME: ms_service_orchestrator
+      DRIVER_NAME: com.mysql.jdbc.Driver
+      DIALECT: org.hibernate.dialect.MySQL5InnoDBDialect
+      DB_CONNECTION_URL: jdbc:mysql://mysql2:3306/ms_service_orchestrator
+      DB_USERNAME: root
+      DB_PASSWORD: root 
+      temn_msf_name: ms-service-orchestrator
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_ingest_source_stream: ms-service-orchestrator-inbox-topic
+      temn_msf_ingest_source_stream_consumergroup_id: ms-service-orchestrator-ingester-consumer
+      temn_msf_ingest_sink_error_enabled: "false"
+      temn_msf_ingest_sink_error_stream_producer_id: ms-service-orchestrator-ingester-error-producer
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_msf_ingest_event_processor: com.temenos.microservice.serviceorchestrator.ingester.EventHandlerImpl
+      temn_msf_exec_env: server
+      temn_msf_function_class_CreateSequence: com.temenos.microservice.serviceorchestrator.function.CreateSequenceImpl
+      # temn_msf_raise_received_event: "true"
+      class_package_name: com.temenos.microservice.serviceorchestrator.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_ingest_is_avro_event_ingester: "false"
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+
+  orchestrator-ioprocessor:
+    container_name: 'evst-orchestrator-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/orchestrator-ioprocessor:1.0  
+    ports:
+      - "40504:40500"
+    environment:
+      DATABASE_KEY: sql
+      DATABASE_NAME: ms_service_orchestrator
+      DRIVER_NAME: com.mysql.jdbc.Driver
+      DIALECT: org.hibernate.dialect.MySQL5InnoDBDialect
+      DB_CONNECTION_URL: jdbc:mysql://mysql2:3306/ms_service_orchestrator
+      DB_USERNAME: root
+      DB_PASSWORD: root 
+      temn_msf_name: ms-service-orchestrator
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_function_class_CreateSequence: com.temenos.microservice.serviceorchestrator.function.CreateSequenceImpl
+      temn_msf_ingest_event_processor: com.temenos.microservice.serviceorchestrator.ingester.EventHandlerImpl
+      class_package_name: com.temenos.microservice.serviceorchestrator.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+
+  paymentorder-api:
+    container_name: 'evst-paymentorder-api'
+    image: temninnohubscale2020.azurecr.io/paymentorder-api:1.0    
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+    ports:
+      - "8090:8080"
+      - "40505:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_paymentorder
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      className_CreatePayment: com.temenos.microservice.paymentorder.function.CreatePaymentImpl
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092     
+      temn_queue_impl: kafka
+      temn_msf_name: ms-paymentorder
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-paymentorder 
+      
+  paymentorder-ioprocessor:
+    container_name: 'evst-paymentorder-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/paymentorder-ioprocessor:1.0    
+    ports:
+      - "40508:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_paymentorder
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-paymentorder
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_ingest_event_processor: com.temenos.microservice.paymentorder.ingester.EventHandlerImpl
+      temn_msf_function_class_CreatePayment: com.temenos.microservice.paymentorder.function.CreatePaymentImpl
+      class_package_name: com.temenos.microservice.paymentorder.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      tmn_inbox_source_namespace: paymentorder-inbox
+      tmn_outbox_source_namespace: paymentorder-outbox
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-paymentorder       
+      
+  paymentstatus-api:
+    container_name: 'evst-paymentstatus-api'
+    image: temninnohubscale2020.azurecr.io/paymentstatus-api:1.0    
+    depends_on:
+      - mongo1
+      - mongo2
+      - mongo3
+    ports:
+      - "8091:8080"
+      - "40525:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_paymentstatus
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      className_GetPaymentStatus: com.temenos.microservice.paymentstatus.function.GetPaymentStatusImpl
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092     
+      temn_queue_impl: kafka
+      temn_msf_name: ms-paymentstatus
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-paymentorder        
+
+  paymentstatus-evingester:
+    container_name: 'evst-paymentstatus-evingester'
+    image: temninnohubscale2020.azurecr.io/paymentstatus-evingester:1.0
+    ports:
+      - "40527:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_paymentstatus
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-paymenstatus
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_ingest_source_stream: ms-accounting-event-topic
+      temn_msf_ingest_source_stream_consumergroup_id: ms-paymentstatus-ingester-consumer
+      temn_msf_ingest_sink_error_enabled: "false"
+      temn_msf_ingest_sink_error_stream_producer_id: ms-paymentstatus-ingester-error-producer
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_exec_env: server
+      temn_msf_ingest_event_processor: com.temenos.microservice.paymentstatus.ingester.EventHandlerImpl
+      # temn_msf_raise_received_event: "true"
+      class_package_name: com.temenos.microservice.paymentstatus.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_ingest_is_avro_event_ingester: "false"
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-paymentstatus
+      
+  paymentstatus-ioprocessor:
+    container_name: 'evst-paymentstatus-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/paymentstatus-ioprocessor:1.0   
+    ports:
+      - "40528:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_paymentstatus
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-paymentstatus
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_ingest_event_processor: com.temenos.microservice.paymentstatus.ingester.EventHandlerImpl
+      class_package_name: com.temenos.microservice.paymentstatus.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      tmn_inbox_source_namespace: paymentstatus-inbox
+      tmn_outbox_source_namespace: paymentstatus-outbox
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-paymentstatus      
+
+  accounting-coingester:
+    container_name: 'evst-accounting-coingester'
+    image: temninnohubscale2020.azurecr.io/accounting-coingester:1.0
+    ports:
+      - "40509:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_accounting
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-accounting
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: 'kafka:29092'
+      temn_msf_ingest_source_stream: ms-accounting-inbox-topic
+      temn_msf_ingest_source_stream_consumergroup_id: ms-accounting-ingester-consumer
+      temn_msf_ingest_sink_error_enabled: 'false'
+      temn_msf_ingest_sink_error_stream_producer_id: ms-accounting-ingester-error-producer
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_exec_env: server
+      temn_msf_function_class_MoveMoney: com.temenos.microservice.accounting.function.MoveMoneyImpl
+      temn_msf_function_class_MoveMoneyUndo: com.temenos.microservice.accounting.function.MoveMoneyUndoImpl
+      class_package_name: com.temenos.microservice.accounting.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_ingest_is_avro_event_ingester: 'false'
+      temn_msf_security_authz_enabled: 'false'
+      temn_queue_impl: kafka
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-accounting      
+
+  accounting-ioprocessor:
+    container_name: 'evst-accounting-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/accounting-ioprocessor:1.0
+    ports:
+      - "40510:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_accounting
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-accounting
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_function_class_MoveMoney: com.temenos.microservice.accounting.function.MoveMoneyImpl
+      temn_msf_function_class_MoveMoneyUndo: com.temenos.microservice.accounting.function.MoveMoneyUndoImpl
+      class_package_name: com.temenos.microservice.accounting.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-accounting      
+
+  fundsreserve-coingester:
+    container_name: 'evst-fundsreserve-coingester'
+    image: temninnohubscale2020.azurecr.io/fundsreserve-coingester:1.0
+    ports:
+      - "40511:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_fundsreserve
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-fundsreserve
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: 'kafka:29092'
+      temn_msf_ingest_source_stream: ms-fundsreserve-inbox-topic
+      temn_msf_ingest_source_stream_consumergroup_id: ms-fundsreserve-ingester-consumer
+      temn_msf_ingest_sink_error_enabled: 'false'
+      temn_msf_ingest_sink_error_stream_producer_id: ms-fundsreserve-ingester-error-producer
+      temn_msf_ingest_generic_ingester: com.temenos.microservice.framework.core.ingester.GenericCommandSTBinaryIngester
+      temn_exec_env: server
+      temn_msf_function_class_ReserveFunds: com.temenos.microservice.fundsreserve.function.ReserveFundsImpl
+      temn_msf_function_class_MarkFundsUsed: com.temenos.microservice.fundsreserve.function.MarkFundsUsedImpl
+      temn_msf_function_class_ReserveFundsUndo: com.temenos.microservice.fundsreserve.function.ReserveFundsUndoImpl
+      className_deleteReservation: com.temenos.microservice.fundsreserve.function.DeleteReservationImpl
+      class_package_name: com.temenos.microservice.fundsreserve.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_ingest_is_avro_event_ingester: 'false'
+      temn_msf_security_authz_enabled: 'false'
+      temn_msf_ingest_is_avro_event_ingester: "false"
+      temn_msf_security_authz_enabled: "false"
+      temn_queue_impl: kafka
+      temn_msf_ingest_inbox_cache_namespace: fundsreserve-inbox
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-fundsreserve      
+
+  fundsreserve-ioprocessor:
+    container_name: 'evst-fundsreserve-ioprocessor'
+    image: temninnohubscale2020.azurecr.io/fundsreserve-ioprocessor:1.0
+    ports:
+      - "40512:40500"
+    environment:
+      DATABASE_KEY: mongodb
+      MONGODB_DBNAME: ms_fundsreserve
+      MONGODB_CONNECTIONSTR: mongodb://mongo1:27017,mongo2:27017,mongo3:27017
+      temn_msf_name: ms-fundsreserve
+      temn_msf_stream_vendor: kafka
+      temn_msf_stream_kafka_bootstrap_servers: kafka:29092
+      temn_msf_exec_env: server
+      temn_msf_stream_outbox_topic:
+      temn_msf_function_class_ReserveFunds: com.temenos.microservice.fundsreserve.function.ReserveFundsImpl
+      temn_msf_function_class_MarkFundsUsed: com.temenos.microservice.fundsreserve.function.MarkFundsUsedImpl
+      temn_msf_function_class_ReserveFundsUndo: com.temenos.microservice.fundsreserve.function.ReserveFundsUndoImpl
+      className_deleteReservation: com.temenos.microservice.fundsreserve.function.DeleteReservationImpl
+      class_package_name: com.temenos.microservice.fundsreserve.function
+      class_inbox_dao: com.temenos.microservice.framework.core.inbox.InboxDaoImpl
+      class_outbox_dao: com.temenos.microservice.framework.core.outbox.OutboxDaoImpl
+      temn_msf_security_authz_enabled: "false"
+      tmn_inbox_source_namespace: fundsreserve-inbox
+      tmn_outbox_source_namespace: fundsreserve-outbox
+      temn_queue_impl: kafka
+      tmn_inbox_thread_pool_count: 10
+      tmn_outbox_thread_pool_count: 10
+      JAEGER_AGENT_HOST: jaeger
+      JAEGER_SERVICE_NAME: ms-fundsreserve      
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.8
+    environment:
+      COLLECTOR_ZIPKIN_HTTP_PORT: 9411
+    extra_hosts:
+      - "moby:127.0.0.1"
+    ports:
+      - "5775:5775"
+      - "6831:6831"
+      - "5778:5778"
+      - "16686:16686"
+      - "14268:14268"
+      - "9411:9411"
+      
+  logio:
+    image: temninnohubscale2020.azurecr.io/logio:1.0
+    ports:
+      - "6688:6688"
+      - "6689:6689"
+      
+  log-stream:
+    image: temninnohubscale2020.azurecr.io/logio-stream:1.0
+    links:
+      - logio:logio
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    privileged: true 
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    environment:
+      KAFKA_BROKERCONNECT: kafka:29092
+      JVM_OPTS: "-Xms32M -Xmx64M"
+      SERVER_SERVLET_CONTEXTPATH: /
+    ports:
+      - "9000:9000"
