@@ -20,7 +20,7 @@
 
 6.	Login to Visualizer using your Temenos Fabric account. 
 
-**Duration**: 1 hr
+**Duration**: 30 min
 
 **Create a new Visualizer application**
 1. Launch Visualizer
