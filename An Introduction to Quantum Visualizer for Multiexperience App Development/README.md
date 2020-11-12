@@ -27,11 +27,11 @@
 
 2. Click the Project menu and then click New Project. The What do you want to start with now? screen of the New Project wizard appears.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image001.png)
+![image](media/image001.png)
 
 3. Select Native App in the wizard and provide project name of your choice. This document will use the project name as TemenosBank. Select Create to generate a new application in Visualizer.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image003.png)
+![image](media/image003.png)
 
 ## Getting started with Quantum Visualizer 
 
@@ -57,35 +57,35 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 1. The application first opens in the Storyboard view. You can view the different forms inside the app and their connections in this view. To view the Properties of each widget in a form, double click on any form to go to the Design View. You can also select the Design tab to navigate to the Design View.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image005.png)
+![image](media/image005.png)
  
 2. Project structure should now be visible on the left panel of the Visualizer. The Project explorer contains options to create apps for mobile, tablet, responsive web and wearable form factors. Using the form in each channel, you can create the user interface of an app.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image006.png)
+![image](media/image006.png)
 
 3. The Canvas is the work area where you design an app. By selecting a device and a platform from its drop-down menus, you can view how your app UI will look on a device without leaving Quantum Visualizer.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image007.png)
+![image](media/image007.png)
 
 4. The Default Library is a collection of widgets, UI components, and icons. The components are the building blocks that allow you to create an app. The icons and components are grouped based on their usage. Explore the collection by scrolling the list or use the search option for finding anything specific.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image008.png)
+![image](media/image008.png)
 
 5.	The Properties panel on the right of Visualizer lets you change the layout and the look and feel of the forms and widgets on the Canvas. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image0013.png)
+![image](media/image013.png)
 
 6. The Data & Services panel, also on the right, enables you to link the back-end data services to your app's user interface elements. The sample services in the Data & Services panel helps you to add a service to your app.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image010.png)
+![image](media/image010.png)
 
 7.	The bottom section under the canvas houses Console,  displays the running record of Quantum Visualizer's every activity. It also informs you of any failed action by showing an error while you initialize services, build your app or launch it.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image018.png)
+![image](media/image018.png)
 
 8.	The Build menu helps you to preview your app or build and publish it to your Quantum Cloud account. You can either preview your app live or on the Quantum App.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image019.png)
+![image](media/image019.png)
 
 **Drag and Drop to build the UI**
 
@@ -94,19 +94,19 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 3. For this exercise, drag and drop the FlexContainer widget onto the Login form on the canvas. Select the newly added FlexContainer widget from the Project explorer on the top left of your canvas. Right-click on the FlexContainer and rename flxHeader.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image023.png)
+![image](media/image023.png)
 
 4. Position the flxHeader into postion using the Look subtab under Properties on the right panel. Since this will serv as our header, we want it at anchored at the top. Set the Left and Top Values to 0Dp. Width and height can be precisely adjusted to requirements, but the defaults are excellent for our walkthrough.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.gif)
+![image](media/image026.gif)
 
 5.	Now, drag and drop an image widget into the flxHeader, rename it to imgHeader and apply the positions as in the screenshot below:
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image026.png)
+![image](media/image026.png)
 
 6. Switch over to the Image tab or double click on the image widget in the canvas to set the image to a logo of your choice. For this example, we are using the following image.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Visualizer%20for%20Multiexperience%20App%20Development/media/image029.png)
+![image](media/image029.png)
 
 *****************************************************************
 

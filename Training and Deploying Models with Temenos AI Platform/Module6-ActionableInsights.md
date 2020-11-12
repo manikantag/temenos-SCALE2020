@@ -14,13 +14,13 @@ Tasks:	In this module you will learn how to harness XAI models and their explain
 
 In this example I will focus on an instance which is a borderline decision, it is, classified as “Uncreditworthy” but with a borderline score. As my model and yours will be different, you can’t see the same instance as I do, but just look for any example which has an “Uncreditworthy” score just above 50%.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/images/image064.png)
+![image](images/image064.png)
 
 2.	**Negative feature contribution – FICO Credit Score**
 
 Having a look at the rules and drivers view, I noticed that “FICO Credit Score is medium” is contributing negatively to a decision.  
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/images/image066.png)
+![image](images/image066.png)
 
 3. **What if I changed the value?**
 Let’s assume the client aplying for the loan has some outstanding debt, lowering significantly his FICO Credit Score and, could the client pay such debt, the credit score value would go back to normal. 
@@ -31,11 +31,13 @@ As you will be exploring a different instance, the value you might need to chang
 
 (I) 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/images/image068.png)
+![image](images/image068.png)
 
 (II)
 
-![image](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/images/image070.png)
+![image](images/image070.png)
+
+Continue to [Module Seven & Eight: Including expert knowledge & Deployment and pipelines](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/Module7-8-IncludingExpertKnowledgeAndDeployment.md)
  
 **Rate Temenos SCALE**
 
