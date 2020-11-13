@@ -1,4 +1,4 @@
-![image](media/Banner-HOL-UX-track.jpg)
+![image](assets/Banner-HOL-UX-track.jpg)
 
 # An Introduction to Quantum Fabric Capabilities and Microservice Integration
 
