@@ -1,4 +1,4 @@
-![image](media/Banner-HOL-AI-track.jpg)
+![image](images/Banner-HOL-AI-track.jpg)
 
 # Training and Deploying Models with Temenos AI Platform
 
