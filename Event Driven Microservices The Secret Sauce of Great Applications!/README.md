@@ -2,7 +2,7 @@
 
 # Event Driven Microservices (Hands-on-Lab)
 ## Introduction
-This brief document is inteded to help setup and run the lab activities of Event Driven Microservices Hands-on-Lab in Temenos SCALE 2020.
+This document is inteded to help setup and run the lab activities of Event Driven Microservices Hands-on-Lab in Temenos SCALE 2020.
 
 This lab is demonstrated using a purpose-built application which runs on Event Driven Microservices Architecture with many microservices. This docker compose package is self contained with all required dependencies such as databases (MongoDB cluster and MySQL), streaming platform (Kafka), observability toolings (Jaeger, Kafdrop and logio) along with all required microservices. 
 
@@ -25,7 +25,7 @@ curl, Postman or Insomnia
 C:\SCALE2020>docker login --username 588b4143-3366-45a7-95da-71e7898b5a8c temninnohubscale2020.azurecr.io
 Password:
 ```
-4. Enter password ? when prompted which should complete login
+4. Enter password CN__bQeVlavC_s085gzQpIU3blDmKRoOTg when prompted which should complete login
 ```
 Login Succeeded
 ```
@@ -50,7 +50,7 @@ http://localhost:16686/
 ```
 http://localhost:9000/
 ```
-3. Check *Logs* by accessing
+3. Check *Logs* by accessing (user: username1 password: password1)
 ```
 http://localhost:6688/
 ```
