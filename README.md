@@ -1,4 +1,4 @@
-![image](media/Banner-HOL-generic.png)
+![image](main/Banner-HOL-generic.jpg)
 
 # Welcome to the home of the Temenos SCALE Hands-on Lab online. 
 
