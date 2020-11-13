@@ -1,3 +1,5 @@
+![image](images/Banner-HOL-Platform-track.jpg)
+
 # Event Driven Microservices (Hands-on-Lab)
 ## Introduction
 This brief document is inteded to help setup and run the lab activities of Event Driven Microservices Hands-on-Lab in Temenos SCALE 2020.
