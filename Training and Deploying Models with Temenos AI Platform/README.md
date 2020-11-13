@@ -1,3 +1,5 @@
+![image](media/Banner-HOL-AI-track.png)
+
 # Training and Deploying Models with Temenos AI Platform
 
 **Prerequisite Software and Tools**

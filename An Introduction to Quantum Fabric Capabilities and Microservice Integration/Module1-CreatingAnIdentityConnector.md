@@ -26,17 +26,17 @@ Tasks you will complete in this lab exercise include:
 
 2. Import the ScaleApp.zip by selecting, Import > Local Project > Open as New Project.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/1.ImportYourVisualizerApplication.png)
+![image](assets/1.ImportYourVisualizerApplication.png)
 
 **Create a New Fabric App**
 
 1. Click the Fabric icon in the left hand navigation.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/2.FabricIcon.png)
+![image](assets/2.FabricIcon.png)
 
 2. Rename the app "BankingDemoApp" by clicking on the pencil icon to edit the app name.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/3.BankingDemoApp.png)
+![image](assets/3.BankingDemoApp.png)
 
 **Create New Identity Service**
 
@@ -46,7 +46,7 @@ Tasks you will complete in this lab exercise include:
 
 3. Quantum provides a wide selection of Identity services to connect to. Although the configuration of each service differs, mapping a service to a client app is standardized through the Identity Manager. Choose the User Repository for the identity type. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/4.IdentityProviders.png)
+![image](assets/4.IdentityProviders.png)
 
 4. Name your identity service "BankingIdentity". Click the Save button
 
@@ -54,51 +54,51 @@ Tasks you will complete in this lab exercise include:
 
 1. We need to add a user to our repository since our repository is empty. From the configuration screen, click the ADD USER button.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/5.AddBankingIdentityUser.png)
+![image](assets/5.AddBankingIdentityUser.png)
 
 2. Provide a login email, first name, last name, phone and password.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/6.AddBankingIdentityUserDetail.png)
+![image](assets/6.AddBankingIdentityUserDetail.png)
 
 3. Click ADD USER
 
 4. You will see that the user was added to your user repository. Make sure to write down the user name and password for the user you created. When we attach our client app to the identity provider, we will use this user to login to our client app.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/7.BankingIdentityUserAdded.png)
+![image](assets/7.BankingIdentityUserAdded.png)
 
 5. Close the window by selecting the Visualizer icon from the left hand navigation. This will take you back to the client development screens.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/8.VisualizerIcon.png)
+![image](assets/8.VisualizerIcon.png)
 
 6. In the right hand pane, you’ll see the Data and Services tab. Click the Refresh button. This will refresh the services and display your BankingIdentity service under the project services. Now, we can see our banking Identity provider within our app. Let’s connect it to the client app.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/9.FabricBackend.png)
+![image](assets/9.FabricBackend.png)
 
 **Connect the Client Application to the Identity Service.**
 
 1. From the top navigation, click the design tab next to the storyboard.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/10.DesignTab.png)
+![image](assets/10.DesignTab.png)
 
 2. In the Project tab, select Responsive Web > Forms > frmLogin. This will display the login screen in your IDE. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/11.ResponsiveWeb.png)
+![image](assets/11.ResponsiveWeb.png)
 
 3. Right click the login button and select the onTouchEnd() action. This will bring up the action editor window. The action editor window is where we are going associate the onTouchEnd action to our Identity provider. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/12.InvokeServiceNode.png)
+![image](assets/12.InvokeServiceNode.png)
 
 4. From the left hand palette, drag the Invoke Service node into the palette. One the node is added, it will appear between the start and end nodes. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/13.InvokeServiceNodeCloseUp.png)
+![image](assets/13.InvokeServiceNodeCloseUp.png)
 
 5. Select the BankingIdentity$login operation.  Now, any time someone clicks the sign in button, the login is called. This will select the operation and the method we want to invoke. In this case, we want to login to the identity provider. 
  
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/14.BAnkingIdentity$login.png)
+![image](assets/14.BAnkingIdentity$login.png)
 
 6.	Once the BAnkingIdentity$login operation is selected, click the Open the Mapping Editor link. From here, we will map our request parameters to our input fields on our form.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/15.BAnkingIdentity$loginMapping.png)
+![image](assets/15.BAnkingIdentity$loginMapping.png)
 
 7.	Now, we need to map the text property from the username text field to the username parameter for the login. Click the text property for under Forms > Loginfrm > Component Instance main > tbxUsername > text
 
@@ -106,21 +106,21 @@ Tasks you will complete in this lab exercise include:
 
 9.	Next we need to map the password text field to the password parameter on the service. Click the text property for under Forms > Loginfrm > Component Instance main > tbxPassword > text
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/16.BAnkingIdentity$loginMappingEditor.png)
+![image](assets/16.BAnkingIdentity$loginMappingEditor.png)
 
 10. Now click the password parameter on the identity service. Notice, the line that point from the password on the form to the password on the service. This indicates the fields are mapped. 
 
 11. Now, we need to navigate to our dashboard page once a login is successful. From the pallet, drag a navigation node onto the workflow over the success node. When a call is successful, we want to navigate away from the login page.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/17.InvokeServiceNodeCloseUp.png)
+![image](assets/17.InvokeServiceNodeCloseUp.png)
 
 12.	In the Screenshot, the form is already selected. To select the form, click the form in the right hand pane to navigate to. In our case, we will navigate to the frmAccountsLanding page.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/18.frmAccountsLanding.png)
+![image](assets/18.frmAccountsLanding.png)
 
 13. Now we need to add an alert box if the user fails to authenticate. From the Left hand palette, drag an alert box over the failure node. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/19.UserFailsAuth.png)
+![image](assets/19.UserFailsAuth.png)
 
 14. Change the Alert Type to Error
 
@@ -134,17 +134,17 @@ Tasks you will complete in this lab exercise include:
 
 1. Before you can run the client application, you need to deploy the Fabric application that exposes the services on Quantum Fabric. When we were in the Fabric console, we were configuring the identity provider, but we can’t use the configuration until it is deployed to a Fabric runtime.  From a web browser, connect to the following url: http://manage.kony.com. 
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/20.ManageKony.png)
+![image](assets/20.ManageKony.png)
 
 2. Using the credentials you used to register your fabric account, login with your credentials. NOTE – These are not the credentials you setup in your user repository within Fabric. These are your cloud credentials you registered with to download Visualizer and create a community edition of Kony Fabric.
 
 3. Select the Banking Demo App from the console dashboard.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/21.BankingDemoApp.png)
+![image](assets/21.BankingDemoApp.png)
 
 4. Select the Publish tab.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/22.ConfigAndPublish.png)
+![image](assets/22.ConfigAndPublish.png)
 
 5. The Publish tab shows all the available environments you can publish to within your account. In my case, I only have one environment to publish to, XAI POC. Click the greyed out circle with a check beside the instance you want to deploy to. When you do, the checkmark will and circle will turn blue  for that instance. 
 
@@ -152,7 +152,7 @@ Tasks you will complete in this lab exercise include:
 
 7. When the application is published, the publication window will show a green checkmark. 
  
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/23.PublishedAppDetails.png)
+![image](assets/23.PublishedAppDetails.png)
 
 8. Close your browser.
 
@@ -162,17 +162,17 @@ Tasks you will complete in this lab exercise include:
 
 10. From the top menu, select Build > Live Preview Settings
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/24.RunInLivePreview.png)
+![image](assets/24.RunInLivePreview.png)
 
 11. Ensure the responsive web checkbox is selected
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/25.ResponsiveWebCheck.png)
+![image](assets/25.ResponsiveWebCheck.png)
  
 12. Click Save and Run.
 
 13. This will locally compile your app as a responsive web app and start the preview browser.
 
-![image](https://github.com/temenos/SCALE2020/blob/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration/assets/26.PublishedWebApp.png)
+![image](assets/26.PublishedWebApp.png)
 
 14. Login to the application suing the credentials you created in the first part of this lab u=in the user repository.
 15. If you are successful, you will successfully navigate to the dashboard form.

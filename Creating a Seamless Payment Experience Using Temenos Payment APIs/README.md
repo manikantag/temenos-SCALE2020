@@ -1,3 +1,5 @@
+![image](media/Banner-HOL-Ecosystem-track.png)
+
 # Payment Initiation APIs
 
 **Prerequisite Software and Tools**
