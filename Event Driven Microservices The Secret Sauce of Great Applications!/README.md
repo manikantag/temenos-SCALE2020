@@ -29,11 +29,14 @@ Password:
 ```
 Login Succeeded
 ```
-5. Execute ***docker-compose up -d***
+5. Execute ***docker-compose pull***. It should start pulling down the images. This usually takes about 20-30 mins, depends on the network.
+```
+C:\SCALE2020>docker-compose pull
+```
+6. Execute ***docker-compose up -d***. This would run the required docker containers.
 ```
 C:\SCALE2020>docker-compose up -d
 ```
-6. It should start pulling down the images and run the required containers. This usually takes about 20-25 mins, depends on the network.
 ```
 ...
 Creating network "scale2020_default" with the default driver
