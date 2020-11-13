@@ -1,4 +1,4 @@
-![image](media/Banner-HOL-Ecosystem-track.png)
+![image](SCALE2020/media/Banner-HOL-Ecosystem-track.png)
 
 # Payment Initiation APIs
 
