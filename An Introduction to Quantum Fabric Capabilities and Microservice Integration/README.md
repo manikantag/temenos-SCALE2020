@@ -1,3 +1,5 @@
+![image](media/Banner-HOL-UX-track.jpg)
+
 # An Introduction to Quantum Fabric Capabilities and Microservice Integration
 
 **Prerequisite Software and Tools**
