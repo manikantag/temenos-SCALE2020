@@ -48,6 +48,7 @@ For every step of the feature selection process, a feature set will be created. 
 ![image](images/image030.png)
  
 Continue to [Module Three: Building models – Focus on XAI](https://github.com/temenos/SCALE2020/blob/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform/Module3-BuildingModulesFocusOnXAI.md)
+
 **Rate Temenos SCALE**
 
 Let us know how we did via our [Feedback Survey](xx)
