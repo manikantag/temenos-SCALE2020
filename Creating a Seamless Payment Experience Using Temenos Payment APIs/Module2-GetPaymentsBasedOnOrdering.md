@@ -26,7 +26,7 @@ At the end of this lab you should be able to:
 
 3. To get list of all payments for a customer, add “?orderingCustomerId=<CustomerID>” in API link 
  
-4. Click Send to execute API, it will get all Payments for ordering customer 100343. You must paste the payload in "raw" format and ensure your content type is set to "application/json” under Headers.
+4. Click Send to execute API, it will get all Payments for ordering customer 100343.
 
 ![image](images/image009.png)
 

@@ -9,8 +9,11 @@ After completing the lab, you should be able to:
 
 **SEPA transaction**
 1. To initiate a SEPA transaction, we are going to use end point https://api.temenos.com/api/v1.0.0/order/paymentOrders
-2. API documentation - https://apidocs.temenos.com/service/payment-orders#operation/createPaymentOrder
+
+2. API doc link - https://apidocs.temenos.com/service/payment-orders#operation/createPaymentOrder
+
 3. To post a payment, we will have to form the Payload. Payment can accept various parameters in Payload Body. 
+
 4. Parameters that can be used for initiating a payment 
 
 ![image](images/image011.png)
@@ -23,7 +26,6 @@ After completing the lab, you should be able to:
 1. In this example we will use the following Payload to initiate SEPA payment
 ```
 {
-  {
   "header": {},
   "body": {
       "paymentOrderProductId": "SEPA",
@@ -44,7 +46,7 @@ After completing the lab, you should be able to:
 
 ![image](images/image016.png)
 
-3. Payload should be set in Body section of the API
+3. Payload should be set in Body section of the API, in RAW JSON format.  
 
 ![image](images/image017.png)
 
