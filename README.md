@@ -20,7 +20,7 @@ Please select the Lab you would like to visit, from the following:
 
 - [An Introduction to Quantum Fabric Capabilities and Microservice Integration](https://github.com/temenos/SCALE2020/tree/main/An%20Introduction%20to%20Quantum%20Fabric%20Capabilities%20and%20Microservice%20Integration)
 
-For more hands-on learning, to ask a question to our subject-matter experts or to experience our APIs, head over to [https://basecamp.temenos.com/s/](https://basecamp.temenos.com/s/) to be a part of the Developer Community. 
+For more hands-on learning, to ask a question to our subject-matter experts or to experience our APIs, head over to [https://basecamp.temenos.com/s/](https://basecamp.temenos.com/s/) to join and become a part of the Developer Community. 
 
 **Rate Temenos SCALE**
 
