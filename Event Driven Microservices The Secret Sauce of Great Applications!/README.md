@@ -2,7 +2,7 @@
 
 # Event Driven Microservices (Hands-on-Lab)
 ## Introduction
-This document is inteded to help setup and run the lab activities of Event Driven Microservices Hands-on-Lab in Temenos SCALE 2020.
+This document is intended to help setup and run the lab activities of Event Driven Microservices Hands-on-Lab in Temenos SCALE 2020.
 
 This lab is demonstrated using a purpose-built application which runs on Event Driven Microservices Architecture with many microservices. This docker compose package is self contained with all required dependencies such as databases (MongoDB cluster and MySQL), streaming platform (Kafka), observability toolings (Jaeger, Kafdrop and logio) along with all required microservices. 
 
