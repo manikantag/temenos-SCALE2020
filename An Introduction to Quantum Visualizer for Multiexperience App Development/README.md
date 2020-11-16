@@ -116,8 +116,12 @@ Tasks:	Tasks you will complete in this lab exercise include:
 1.	For this section we’ll explore using Skins tab for the widgets to add some color to our app.
 2.	Please import the starter application from <git>. Use Project > Import > Local Project > Add to Current Project > From an Archive and point to the archive downloaded from Git.
 
+![image](media/image031.png)
+
 3.	Select the Login form and switch to Skins tab under properties on the right panel.
 4.	Use the dropdown for Background type and select Image. Using the Browse option, click next to default and search then select loginbgradient.png as the option.
+
+![image](media/image033.png)
 
 **Using Components to rapidly build you UI/UX**
 
@@ -130,8 +134,14 @@ Tasks:	Tasks you will complete in this lab exercise include:
 - scale2020.login.contentmain
 - scale2020.login.loginfooter
 - scale2020.login.adplaceholder
+
+![image](media/image035.png)
  
 7. At any point during the UI creation, you can switch between operating systems and their corresponding device types from the toggles in the canvas
+
+![image](media/image037.png)
+
+![image](media/image039.png)
 
 Preview/Build the App
 a.	For this section we’ll explore using Live Preview on your Quantum app running on your device to quickly review the progress of the app we are building.
@@ -139,9 +149,13 @@ b.	From the main menu, go to Build and select Live Preview Settings.
 c.	In the Live Preview Settings window, under Native, select checkboxes next to OS of the mobile device on which you are going to view the app. For example: iOS and Android
 d.	Ensure that you have unselected the checkboxes for other platforms and channels that you don’t intend to build or haven’t created any forms.
 e.	Click Save & Run.
+
+![image](media/image041.png)
  
 f.	It may take some time for the Visualizer to show the Live Preview is ready window.
- 
+
+![image](media/image043.png)
+
 g.	Connect your mobile device to your computer using a USB cable or make sure you are on the same Wi-Fi network.
 o	If using USB, for Android mobile device, ensure that the use of USB is Transfer files.
 o	If using USB, for iOS mobile device, ensure that a trust has been established between your device and your computer.
@@ -149,16 +163,32 @@ h.	Launch the Quantum App on your mobile device.
 i.	Select the USB/Wi-Fi option.
 j.	On successful connection, the Visualizer on your computer shows a success prompt.
 k.	Click Connect.
-8	Responsive Layout
 
-a.	For this section, we’ll use Responsive Grid Layout to quickly build the login page. The Responsive Grid layout divides the container widget into columns based on the value of the Span property. The maximum number of columns is twelve. The Span property sets the width of the child widget based on the 12-column layout. The Offset property determines the position of the left edge of the widget. This position is measured either from the left edge of the parent widget or from the right edge of the widget present to its left. Please see docs link for more information on Responsive Grid Layout.
+**Responsive Layout**
+
+a.	For this section, we’ll use Responsive Grid Layout to quickly build the login page. The Responsive Grid layout divides the container widget into columns based on the value of the Span property. The maximum number of columns is twelve. The Span property sets the width of the child widget based on the 12-column layout. The Offset property determines the position of the left edge of the widget. This position is measured either from the left edge of the parent widget or from the right edge of the widget present to its left. Please see docs link for more information on [Responsive Grid Layout](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#ResponsiveGridLayout.htm).
 b.	Let’s begin by creating a new form under Responsive Web section of the project.  
+
+![image](media/image045.png)
+
 c.	Rename the form as Login. Notice the responsive break points for the form under properties. These are used to create or edit breakpoints you would like to use during design phase for quick switch.  
+
+![image](media/image046.png)
+
 d.	Tab over to Skin under Properties and edit the Background. Switch the type to Two Step Gradient. Select the color at start position, use the Hex color code: 003e75 and the end position, use the Hex color code: 1e588b. Finally select Apply to enable the skin. 
- 
-   
+
+![image](media/image049.png)
+![image](media/image051.png)
+![image](media/image053.png)
+
 e.	Tab over to Form under Properties and edit the Layout type property to Responsive Grid.  
+
+![image](media/image055.png)
+
 f.	Drag and drop a FlexContainer from the Default Library onto the Login form. This container will automatically snap to the top-left corner of the form because of the responsive grid layout model. Notice the Properties>Look section to find the Responsive Configuration of this flexcontainer.
+
+
+
 g.	Edit the properties of the flexcontainer as per the screenshot below.  
 h.	Switch to Templates and search for the login component – com.konyolb.login.main. Right click on the component and select Insert Into to import the component into flexLogincontainer.  
 i.	Drag and drop another FlexContainer on the Login Form and apply the following responsive configuration as below 
