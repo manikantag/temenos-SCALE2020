@@ -8,7 +8,7 @@ Please select the Lab you would like to visit, from the following:
 
 - [Multi-cloud NuoDB on Kubernetes Production Architectures for Resilient and Scalable Temenos Transact and Temenos Infinity Wealth Operations](https://github.com/temenos/SCALE2020/tree/main/Multi-cloud%20NuoDB%20on%20Kubernetes%20Production%20Architectures%20for%20Resilient%20and%20Scalable%20Temenos%20Transact%20and%20Temenos%20Infinity%20Wealth%20Operations)
 
-- [Cloud-native development on Red Hat Openshift](https://learn.openshift.com/?sc_cid=7013a00000267bsAAA) Opens openshift.com website
+- [Cloud-native development on Red Hat Openshift](https://learn.openshift.com/?sc_cid=7013a00000267bsAAA) (Opens openshift.com website)
 
 - [Training and Deploying Models with Temenos AI Platform](https://github.com/temenos/SCALE2020/tree/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform)
 
@@ -24,4 +24,4 @@ For more hands-on learning, to ask a question to our subject-matter experts or t
 
 **Rate Temenos SCALE**
 
-Let us know how we did via our [Feedback Survey]()
+Let us know how we did via our [Feedback Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=D1TS1Qr2rUWGqeLnku5maQm4GcDXBTFLrQ1exd1wB_1UOTY4SFZISzRLQjU4QVVRSjlUSzExRk1CNi4u)
