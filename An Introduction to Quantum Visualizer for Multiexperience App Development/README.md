@@ -8,7 +8,7 @@
 
 - [Kony Fabric](http://Manage.kony.com)
 
-- Quantum App (Available on the Apple Store / [Google Play](https://play.google.com/store/apps/details?id=com.kony.FunctionPreviewApp&hl=en_GB&gl=US)
+- Quantum App (Available on the [Apple Store](https://apps.apple.com/us/app/temenos-quantum/id1459085071) / [Google Play](https://play.google.com/store/apps/details?id=com.kony.FunctionPreviewApp&hl=en_GB&gl=US)
 
 1.	Download and install Visualizer.
 
