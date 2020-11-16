@@ -12,7 +12,7 @@ Please select the Lab you would like to visit, from the following:
 
 - [Training and Deploying Models with Temenos AI Platform](https://github.com/temenos/SCALE2020/tree/main/Training%20and%20Deploying%20Models%20with%20Temenos%20AI%20Platform)
 
-- [Event Driven Microservices: The Secret Sauce of Great Applications](main/Event%20Driven%20Microservices%20The%20Secret%20Sauce%20of%20Great%20Applications!)
+- [Event Driven Microservices: The Secret Sauce of Great Applications](https://github.com/temenos/SCALE2020/tree/main/Event%20Driven%20Microservices%20The%20Secret%20Sauce%20of%20Great%20Applications!)
 
 - [Creating a Seamless Payment Experience Using Temenos Payment APIs](https://github.com/temenos/SCALE2020/tree/main/Creating%20a%20Seamless%20Payment%20Experience%20Using%20Temenos%20Payment%20APIs)
 
