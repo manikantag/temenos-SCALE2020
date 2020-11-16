@@ -110,7 +110,6 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 ![image](media/image029.png)
 
-
 **Customize our Skins**
 1. For this section we’ll explore using Skins tab for the widgets to add some color to our app.
 2. Please import the starter application from <git>. Use Project > Import > Local Project > Add to Current Project > From an Archive and point to the archive downloaded from Git.
@@ -171,7 +170,7 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 3. Rename the form as Login. Notice the responsive break points for the form under properties. These are used to create or edit breakpoints you would like to use during design phase for quick switch.  
 
-![image](media/image046.png)
+![image](media/image047.png)
 
 4. Tab over to Skin under Properties and edit the Background. Switch the type to Two Step Gradient. Select the color at start position, use the Hex color code: 003e75 and the end position, use the Hex color code: 1e588b. Finally select Apply to enable the skin. 
 
