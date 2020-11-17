@@ -85,3 +85,9 @@ Note: Payment status is available only while the payment is processed by various
 ### Docker
 1. It's possible that docker might have resource constraints, especially memory if not allocated 12GB. If you execute ***docker-compose ps*** which would provide a list of containers with all but one (evst-mongosetup) should be *Up*.
 2. If Docker complaints of lack of volume space with error similar to *no space left on device*, perhaps there are dangling volumes that can be removed. To check dangling volumes, execute *docker volume ls -qf dangling=true* and remove those unwanted volumes
+
+**Rate Temenos SCALE**
+
+Let us know how we did via our [Feedback Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=D1TS1Qr2rUWGqeLnku5maQm4GcDXBTFLrQ1exd1wB_1UOTY4SFZISzRLQjU4QVVRSjlUSzExRk1CNi4u)
+
+Get Involved in the Temenos Developer Community at [Base Camp](https://basecamp.temenos.com/s/base-camp-welcome)

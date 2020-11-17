@@ -131,6 +131,8 @@ Let's just see how we're doing. We'll publish this to an actual environment and 
 
 [Continue to Assess the Score and Update the Loan Application](Module3-CreatingAQuantumFabricWorkflow3.md)
 
-### Rate Temenos SCALE**
+**Rate Temenos SCALE**
 
-Let us know how we did via our [Feedback Survey]()
+Let us know how we did via our [Feedback Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=D1TS1Qr2rUWGqeLnku5maQm4GcDXBTFLrQ1exd1wB_1UOTY4SFZISzRLQjU4QVVRSjlUSzExRk1CNi4u)
+
+Get Involved in the Temenos Developer Community at [Base Camp](https://basecamp.temenos.com/s/base-camp-welcome)

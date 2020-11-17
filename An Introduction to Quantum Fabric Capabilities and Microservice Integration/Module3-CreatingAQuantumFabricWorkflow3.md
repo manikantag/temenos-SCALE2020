@@ -296,6 +296,8 @@ Also, workflows are very powerful tools that will allow you to decouple client a
 
 However, workflows should not be abused. Not everything in your app is necessarily a good candidate to be modelled as a Fabric Workflow. Some use cases may be too simple or trivial to become workflows. Meanwhile, others may be way too large or complex. Fabric Workflows are meant as a lightweight solution for use cases which commonly arise when building multi-experience digital experiences, but not as a fully-fledged BPMS for the entire enterprise.
 
-## Rate Temenos SCALE
+**Rate Temenos SCALE**
 
-Let us know how we did via our [Feedback Survey]()
+Let us know how we did via our [Feedback Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=D1TS1Qr2rUWGqeLnku5maQm4GcDXBTFLrQ1exd1wB_1UOTY4SFZISzRLQjU4QVVRSjlUSzExRk1CNi4u)
+
+Get Involved in the Temenos Developer Community at [Base Camp](https://basecamp.temenos.com/s/base-camp-welcome)
