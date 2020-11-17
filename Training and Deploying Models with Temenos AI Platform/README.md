@@ -6,6 +6,16 @@
 
 - Browser & Internet Access
 
+- Choose a regional cluster from the list below and ensure you can login to it using the credentials supplied below. 
+
+Region | User Details | Password
+------------ | ------------- | -------------
+[America](https://scale-us.app.logicalglue.net/) | scale@us | scale2020TXAI
+[EU](https://scale-eu.app.logicalglue.net/) | scale@eu | YN6ZNTBX4yc9Piq
+[Asia](https://scale-asia.app.logicalglue.net/) | scale@as | hX26hYcuAzn68Tp
+
+You will use this cluster for all modules in this lab. 
+
 ## Module One: Creating a project
 
 **Duration**: 15 mins
