@@ -10,9 +10,9 @@
 
 Region | User Details | Password
 ------------ | ------------- | -------------
-[America](https://scale-us.app.logicalglue.net/) | scale@us | scale2020TXAI
-[EU](https://scale-eu.app.logicalglue.net/) | scale@eu | YN6ZNTBX4yc9Piq
-[Asia](https://scale-asia.app.logicalglue.net/) | scale@as | hX26hYcuAzn68Tp
+[Americas](https://scale-us.app.logicalglue.net/) | scale@us | scale2020TXAI
+[EMEA](https://scale-eu.app.logicalglue.net/) | scale@eu | YN6ZNTBX4yc9Piq
+[APAC](https://scale-asia.app.logicalglue.net/) | scale@as | hX26hYcuAzn68Tp
 
 You will use this cluster for all modules in this lab. 
 
