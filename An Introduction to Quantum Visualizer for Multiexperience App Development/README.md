@@ -16,7 +16,7 @@
 
 3.	Documentation link to get started - https://basecamp.temenos.com/s/getting-started 
 
-4.	Download starter package for the exercise - TemenosBankExport.zip / DonutChartExport.zip & SCALE_import.zip
+4.	Download starter package for the exercise - DonutChartExport.zip & SCALE_import.zip
 
 5.	Create a Temenos Fabric account if you are not a registered developer using https://manage.kony.com/registration. 
 
@@ -110,16 +110,14 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 ![image](media/image029.png)
 
-*****************************************************************
-
 **Customize our Skins**
-1.	For this section we’ll explore using Skins tab for the widgets to add some color to our app.
-2.	Please import the starter application from <git>. Use Project > Import > Local Project > Add to Current Project > From an Archive and point to the archive downloaded from Git.
+1. For this section we’ll explore using Skins tab for the widgets to add some color to our app.
+2. Please import the starter application from <git>. Use Project > Import > Local Project > Add to Current Project > From an Archive and point to the archive downloaded from Git.
 
 ![image](media/image031.png)
 
-3.	Select the Login form and switch to Skins tab under properties on the right panel.
-4.	Use the dropdown for Background type and select Image. Using the Browse option, click next to default and search then select loginbgradient.png as the option.
+3. Select the Login form and switch to Skins tab under properties on the right panel.
+4. Use the dropdown for Background type and select Image. Using the Browse option, click next to default and search then select loginbgradient.png as the option.
 
 ![image](media/image033.png)
 
@@ -127,10 +125,10 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 1. For this section we’ll explore using components to rapidly accelerate the pace of UI creation. 
 2. From the upper-left corner of Visualizer, in the Project explorer, expand Mobile > Forms and select the Contact form.
-3.	Go to the Templates explorer and expand Components > scale2020.login.welcome.
-4.	Right-click on the scale2020.login.welcome component and select Insert into.
-5.	The component is now added to the Login form.
-6.	Repeat the steps for the following components to complete the Login form.
+3. Go to the Templates explorer and expand Components > scale2020.login.welcome.
+4. Right-click on the scale2020.login.welcome component and select Insert into.
+5. The component is now added to the Login form.
+6. Repeat the steps for the following components to complete the Login form.
 - scale2020.login.contentmain
 - scale2020.login.loginfooter
 - scale2020.login.adplaceholder
@@ -143,103 +141,152 @@ Tasks:	Tasks you will complete in this lab exercise include:
 
 ![image](media/image039.png)
 
-Preview/Build the App
-a.	For this section we’ll explore using Live Preview on your Quantum app running on your device to quickly review the progress of the app we are building.
-b.	From the main menu, go to Build and select Live Preview Settings.
-c.	In the Live Preview Settings window, under Native, select checkboxes next to OS of the mobile device on which you are going to view the app. For example: iOS and Android
-d.	Ensure that you have unselected the checkboxes for other platforms and channels that you don’t intend to build or haven’t created any forms.
-e.	Click Save & Run.
+**Preview/Build the App**
+1. For this section we’ll explore using Live Preview on your Quantum app running on your device to quickly review the progress of the app we are building.
+2. From the main menu, go to Build and select Live Preview Settings.
+3. In the Live Preview Settings window, under Native, select checkboxes next to OS of the mobile device on which you are going to view the app. For example: iOS and Android
+4. Ensure that you have unselected the checkboxes for other platforms and channels that you don’t intend to build or haven’t created any forms.
+5. Click Save & Run.
 
 ![image](media/image041.png)
  
-f.	It may take some time for the Visualizer to show the Live Preview is ready window.
+6. It may take some time for the Visualizer to show the Live Preview is ready window.
 
 ![image](media/image043.png)
 
-g.	Connect your mobile device to your computer using a USB cable or make sure you are on the same Wi-Fi network.
-o	If using USB, for Android mobile device, ensure that the use of USB is Transfer files.
-o	If using USB, for iOS mobile device, ensure that a trust has been established between your device and your computer.
-h.	Launch the Quantum App on your mobile device.
-i.	Select the USB/Wi-Fi option.
-j.	On successful connection, the Visualizer on your computer shows a success prompt.
-k.	Click Connect.
+7. Connect your mobile device to your computer using a USB cable or make sure you are on the same Wi-Fi network.
+	o If using USB, for Android mobile device, ensure that the use of USB is Transfer files.
+	o If using USB, for iOS mobile device, ensure that a trust has been established between your device and your computer.
+8. Launch the Quantum App on your mobile device.
+9. Select the USB/Wi-Fi option.
+10. On successful connection, the Visualizer on your computer shows a success prompt.
+11. Click Connect.
 
 **Responsive Layout**
-
-a.	For this section, we’ll use Responsive Grid Layout to quickly build the login page. The Responsive Grid layout divides the container widget into columns based on the value of the Span property. The maximum number of columns is twelve. The Span property sets the width of the child widget based on the 12-column layout. The Offset property determines the position of the left edge of the widget. This position is measured either from the left edge of the parent widget or from the right edge of the widget present to its left. Please see docs link for more information on [Responsive Grid Layout](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#ResponsiveGridLayout.htm).
-b.	Let’s begin by creating a new form under Responsive Web section of the project.  
+1. For this section, we’ll use Responsive Grid Layout to quickly build the login page. The Responsive Grid layout divides the container widget into columns based on the value of the Span property. The maximum number of columns is twelve. The Span property sets the width of the child widget based on the 12-column layout. The Offset property determines the position of the left edge of the widget. This position is measured either from the left edge of the parent widget or from the right edge of the widget present to its left. Please see docs link for more information on [Responsive Grid Layout](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#ResponsiveGridLayout.htm).
+2. Let’s begin by creating a new form under Responsive Web section of the project.  
 
 ![image](media/image045.png)
 
-c.	Rename the form as Login. Notice the responsive break points for the form under properties. These are used to create or edit breakpoints you would like to use during design phase for quick switch.  
+3. Rename the form as Login. Notice the responsive break points for the form under properties. These are used to create or edit breakpoints you would like to use during design phase for quick switch.  
 
-![image](media/image046.png)
+![image](media/image047.png)
 
-d.	Tab over to Skin under Properties and edit the Background. Switch the type to Two Step Gradient. Select the color at start position, use the Hex color code: 003e75 and the end position, use the Hex color code: 1e588b. Finally select Apply to enable the skin. 
+4. Tab over to Skin under Properties and edit the Background. Switch the type to Two Step Gradient. Select the color at start position, use the Hex color code: 003e75 and the end position, use the Hex color code: 1e588b. Finally select Apply to enable the skin. 
 
 ![image](media/image049.png)
-![image](media/image051.png)
-![image](media/image053.png)
+![image](media/image051.png) ![image](media/image053.png) 
 
-e.	Tab over to Form under Properties and edit the Layout type property to Responsive Grid.  
+5. Tab over to Form under Properties and edit the Layout type property to Responsive Grid.  
 
 ![image](media/image055.png)
 
-f.	Drag and drop a FlexContainer from the Default Library onto the Login form. This container will automatically snap to the top-left corner of the form because of the responsive grid layout model. Notice the Properties>Look section to find the Responsive Configuration of this flexcontainer.
+6. Drag and drop a FlexContainer from the Default Library onto the Login form. This container will automatically snap to the top-left corner of the form because of the responsive grid layout model. Notice the Properties>Look section to find the Responsive Configuration of this flexcontainer.
+7. Edit the properties of the flexcontainer as per the screenshot below. 
+
+![image](media/image057.png)
+
+	Id: flexLoginContainer
+	Height: 100%
+	Span:
+	  640:  10
+	  1024: 10
+	  1366: 5
+	Offset:
+	  640:  1
+	  1024: 1
+	  1366: 0
+	  
+8. Switch to Templates and search for the login component – com.konyolb.login.main. Right click on the component and select Insert Into to import the component into flexLogincontainer.
+
+![image](media/image059.png)
+
+9. Drag and drop another FlexContainer on the Login Form and apply the following responsive configuration as below
+
+![image](media/image061.png) 
+
+	Id: flexRightContainer
+	Height: 100%
+	Span:
+	  640:  0
+	  1024: 0
+	  1366: 7
+	Offset:
+	  640:  0
+	  1024: 0
+	  1366: 0
+
+10. Switch to Templates and search for the login component – scale2020.loginrightcontainer. Right click on the component and select Insert Into to import the component into flexRightContainer.
+11. Now that your login page is ready, you can use the grid switch option on the canvas to review your UI layout between various screen sizes.
+
+![image](media/image063.png) 
+
+**Action Editor**
+
+1. In this section we’ll enable some quick actions to navigate between our UI. 
+2. Select the Sign In buttons on the login screens for mobile/responsive web and navigate over to Properties>Action>OnClick>Edit or simply right click on the button to and select Action:OnClick
+
+![image](media/image065.png)
+![image](media/image067.png)
+
+3. This will enable Action Editor where you can perform various business logic actions using workflow model, or design model and review the JavaScript code the tool generates.
+
+![image](media/image069.png)
+
+4. Select or drag and drop Navigate to Form option from the left panel to add it to the logic. From the additional arguments panel that pops open, select the form you would like to navigate to.
+
+![image](media/image071.png)
+
+5. Repeat the process for other forms and enable navigation as needed.
+6. You can further add complex business logic using the other options provided in the Action Editor. To learn more, please see our documentation [here](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#working_with_Action_Editor.htm).
+
+**Import 3rd Party Libraries**
+1. Using the built in Nitro framework, you have the freedom and flexibility to bring in 3rd party libraries and frameworks to enhance the user experience of your Visualizer built applications.
+2. Use the main menu -> Project -> Import -> Custom Web Widget -> DonutChartExport.zip to import the Donut Chart 3rd party charting library into your application. This Donut Chart will render the PFM data in the Responsive Web section of your application.
+
+![image](media/image073.png)
+
+3. Once successfully imported, you should be able to see the widget added under default library
+
+![image](media/image075.png)
+
+4. You can, just as with any other widget, drag and drop this into the UI.
+5. For your convenience, the code was already setup under frmAccountsLandingNewController.js -> initlizeDonutChart(). 
+6. Repeat live preview steps to review the app with clean build to validate the 3rd party charting library now integrated and working in the application.
+
+**Publish your app**
+1. Use Live Preview steps from Step 7 to review the new changes to your application.
+2. Once ready to publish, From the main menu, select Build.
+3. Click Publish Live Preview. The Publish Live Preview window appears. From the Publish Live Preview window, under Mobile, select the checkboxes next to the OS of the mobile device on which you are going to view the app. For example: iOS and Android under Mobile. Ensure that you have unselected the checkboxes for all the other platforms and channels.
+
+![image](media/image077.png)
+
+4. Click Publish.
+5. After the app is published, the Live Preview is ready window appears.
+6. Quantum Visualizer proceeds to publish the app, as indicated by the progress bar. Once the application is uploaded to your Quantum account, a publish code is generated as shown here. 
+
+![image](media/image079.png)
+
+7. Launch the Quantum App on your mobile device.
+8. Select the Cloud tab.
+9. In the 5 Digit App Viewer Code input box, enter the App Viewer Code from Visualizer.
+10. Alternatively, from Quantum App on your mobile device, go to the Cloud tab and click SCAN QR CODE. Allow camera access to the Quantum App. Scan the QR Code displayed on Visualizer to view the app.
 
 
+**Build for Web & Native**
+1. The Build and Publish Web App action publishes the application to your Quantum Fabric environment and enables you to view your app by providing a link. The Build and Publish Web app option also publishes the Quantum Fabric app to the Quantum Cloud. To publish an app to the Quantum Cloud, logging in to your Quantum Account is mandatory.
+2. To access this use the Build > Build and Publish Web option. Select responsive web as the option and hit Build.
 
-g.	Edit the properties of the flexcontainer as per the screenshot below.  
-h.	Switch to Templates and search for the login component – com.konyolb.login.main. Right click on the component and select Insert Into to import the component into flexLogincontainer.  
-i.	Drag and drop another FlexContainer on the Login Form and apply the following responsive configuration as below 
- 
-j.	Switch to Templates and search for the login component – scale2020.loginrightcontainer. Right click on the component and select Insert Into to import the component into flexRightContainer.
-k.	Now that your login page is ready, you can use the grid switch option on the canvas to review your UI layout between various screen sizes.  
+![image](media/image081.png)
 
-9	Action Editor
+3. Once the build and publish is successful, you will see the application URL as below
 
-a.	In this section we’ll enable some quick actions to navigate between our UI. 
-b.	Select the Sign In buttons on the login screens for mobile/responsive web and navigate over to Properties>Action>OnClick>Edit or simply right click on the button to and select Action:OnClick
-  
- 
-c.	This will enable Action Editor where you can perform various business logic actions using workflow model, or design model and review the JavaScript code the tool generates.
- 
-d.	Select or drag and drop Navigate to Form option from the left panel to add it to the logic. From the additional arguments panel that pops open, select the form you would like to navigate to.
- 
-e.	Repeat the process for other forms and enable navigation as needed.
-f.	You can further add complex business logic using the other options provided in the Action Editor. To learn more, please see our documentation here.
+![image](media/image083.png)
 
-10	Import 3rd Party Libraries
-a.	Using the built in Nitro framework, you have the freedom and flexibility to bring in 3rd party libraries and frameworks to enhance the user experience of your Visualizer built applications.
-b.	Use the main menu -> Project -> Import -> Custom Web Widget -> DonutChartExport.zip to import the Donut Chart 3rd party charting library into your application.
- 
-c.	Once successfully imported, you should be able to see the widget added under default library
- 
-d.	You can, just as with any other widget, drag and drop this into the UI.
-e.	For your convenience, the code was already setup under frmAccountsLandingNewController.js -> initlizeDonutChart(). 
-f.	Repeat live preview steps to review the app with clean build to validate the 3rd party charting library now integrated and working in the application.
-11
-	Publish your app
-g.	Use Live Preview steps from Step 7 to review the new changes to your application.
-h.	Once ready to publish, From the main menu, select Build.
-i.	Click Publish Live Preview. The Publish Live Preview window appears. From the Publish Live Preview window, under Mobile, select the checkboxes next to the OS of the mobile device on which you are going to view the app. For example: iOS and Android under Mobile. Ensure that you have unselected the checkboxes for all the other platforms and channels.
- 
-j.	Click Publish.
-k.	After the app is published, the Live Preview is ready window appears.
-l.	Quantum Visualizer proceeds to publish the app, as indicated by the progress bar. Once the application is uploaded to your Quantum account, a publish code is generated as shown here. 
- 
-m.	Launch the Quantum App on your mobile device.
-n.	Select the Cloud tab.
-o.	In the 5 Digit App Viewer Code input box, enter the App Viewer Code from Visualizer.
-p.	Alternatively, from Quantum App on your mobile device, go to the Cloud tab and click SCAN QR CODE. Allow camera access to the Quantum App. Scan the QR Code displayed on Visualizer to view the app.
-12	Build for Web & Native
-a.	The Build and Publish Web App action publishes the application to your Quantum Fabric environment and enables you to view your app by providing a link. The Build and Publish Web app option also publishes the Quantum Fabric app to the Quantum Cloud. To publish an app to the Quantum Cloud, logging in to your Quantum Account is mandatory.
-b.	To access this use the Build > Build and Publish Web option. Select responsive web as the option and hit Build.
- 
-c.	Once the build and publish is successful, you will see the application URL as below
- 
-d.	The Build Native Local is used to build the native apps. You can use the Post Build Action to direct Visualizer to generate the binaries, publish to Visualizer store or to run the app on simulators or devices connected to the developer’s machine.
-     
+4. The Build Native Local is used to build the native apps. You can use the Post Build Action to direct Visualizer to generate the binaries, publish to Visualizer store or to run the app on simulators or devices connected to the developer’s machine.
+
+![image](media/image085.png) ![image](media/image087.png) ![image](media/image089.png)
+
 Please follow the prerequisites for iOS builds [here](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#BuildAnAppForiOS.htm).
 Please follow the prerequisites for Android builds [here](https://docs.kony.com/konylibrary/visualizer/visualizer_user_guide/Default.htm#BuildAnAppForAndroid.htm).
 
