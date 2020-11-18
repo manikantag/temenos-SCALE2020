@@ -1,6 +1,6 @@
 ![image](/Banner-HOL-generic.jpg)
 
-# Welcome to the home of the Temenos SCALE Hands-on Lab online. 
+# Welcome to the home of the Temenos SCALE Hands-on Labs. 
 
 This is the place to hone your skills and develop the hands-on expertise you need to be even more successful.
 
